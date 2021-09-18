@@ -1,0 +1,373 @@
+/** Estilos generales **/
+* {
+    list-style: none;
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif; }
+
+:root {
+  /*Variables globales en CSS*/
+  --colorUno: black;
+  --colorDos: white;
+  --colortres: rgb(184, 181, 181);
+  --colorCuatro: rgb(97, 8, 133);
+  --colorCinco: #ffbe50;
+  --colorSeis: #a8a8a8; /*Gris alternativo*/
+  --colorSiete: rgba(255, 146, 3, 0.8); /*Naranja fuego*/
+  --fuenteUno: "Nunito", sans-serif;
+  --fuenteDos: "Arial", Helvetica, sans-serif; }    
+
+/** Fuentes **/
+@font-face {
+    font-family: "TrebuchetMS";
+    src: url(./fonts/TrebuchetMS/TrebuchetMS.ttf);
+    font-weight: normal;
+    font-style: normal; }
+  
+  @font-face {
+    font-family: "BebasNeue";
+    src: url(./fonts/BebasNeue/BebasNeue.otf);
+    font-weight: normal;
+    font-style: normal; }
+  
+  @font-face {
+    font-family: "WebSymbolsRegular";
+    src: url(./fonts/webSymbols/websymbols-regular-webfont.eot), url(./fonts/webSymbols/websymbols-regular-webfont.eot?#iefix) format("embedded-opentype"), url(./fonts/webSymbols/websymbols-regular-webfont.ttf) format("truetype"), url("./fonts/webSymbols/websymbols-regular-webfont.svg#WebSymbolsRegular") format("svg");
+    font-weight: normal;
+    font-style: normal; }  
+  
+  .hoverMenu{
+    transition: all 300ms;
+  }  
+
+  .hoverMenu:hover{
+    transform: scale(1.15, 1.15);
+  }  
+
+  .logo {
+    display: flex;  
+    align-items: center;
+    margin-left: 3vw;
+    color: #3c4146;
+    text-transform: uppercase;
+    padding-left: 1vw;
+    padding-right: 2vw;}
+
+  .logo:hover{
+    background-color: lightgrey;
+    border-radius: 5px;
+    overflow: hidden;
+  }  
+
+  .gear{
+    font-family: "webSymbolsRegular";
+    margin: 0 1.5vw 0 0;
+    font-size: 4vw;
+    color: rgba(255, 146, 3, 0.8);
+    text-shadow: 0px 0px 3px #a8a8a8;
+    }
+
+  .rodar{
+    animation-name: rodar;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }  
+
+  @keyframes rodar{
+    from{
+      transform: rotateZ(0deg);
+    }
+    to{
+      transform: rotateZ(360deg);
+    }
+  }
+  
+  .logo:hover .gear{
+    animation: cae 500ms linear;
+  }
+
+  @keyframes cae{
+    0%{
+      transform: translateY(0%);
+    }
+    50%{
+      transform: translateY(200%);
+    }
+    100%{
+      transform: translateY(0%);
+    }
+  }
+  
+  .justBeNice{
+    font-family: "webSymbolsRegular";
+    font-size: 7vw;
+    margin-left: 2vw;
+    font-weight: bold;
+    font-style: italic;
+    text-shadow: 2px 2px 5px rgba(255, 146, 3, 0.8); }
+
+  .desplazamiento{
+    animation-name: desplazamiento;
+    animation-duration: 800ms;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+  }
+  
+  @keyframes desplazamiento{
+    0%{
+      margin-left: 30vw;
+      transform: rotate(360deg);
+    }
+    25%{
+      margin-left: 24vw;
+      transform: rotate(270deg);
+    }
+    50%{
+      margin-left: 18vw;
+      transform: rotate(180deg);
+    }
+    75%{
+      margin-left: 12vw;
+      transform: rotate(90deg);
+    }
+    100%{
+      margin-left: 0vw;
+      transform: rotate(0deg);
+    }
+  }
+
+  .logo a {
+    text-decoration: none;
+    color: #3c4146;
+    font-size: 4vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 4.5vw;
+    text-shadow: 2px 2px 5px var(--colorCinco); }
+  
+  .logo:hover a{
+    animation: fromRight 300ms linear;
+  }
+  
+  @keyframes fromRight{
+    from{
+      transform: translateX(200%);
+    }
+    to{
+      transform: translateX(0%);
+    }
+  }
+
+  .aboutMe{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 1vh;
+  }  
+
+  .fotoPerfil{
+    width: 27vw;
+    height: auto;
+    border-radius: 35%;
+  }
+
+  .parrafoPerfil{
+    margin: 1vh 1vw 1vh 1vw;
+  }
+
+  .titulo{
+    font-style: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    text-align: center;
+    margin: 20px 0px 20px 0px;
+    background-color: #212529;
+    color: var(--colorCinco) ;
+    padding: 5px;
+
+  } 
+
+  #proyectos {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+    margin-bottom: 5vh;
+    justify-content: center; }
+  
+  .proyecto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #8a8989 inset;
+  }
+
+  .img {  /*640 ancho x 426 alto*/
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    border-radius: 10px; }
+  
+  .info{
+      font-style: var(--fuenteDos);
+      line-height: 10px;
+      margin: 15px 0px 15px 0px;    
+  }
+
+  /* #proyectoCoderhouse{
+    grid-column: 1/3;
+    grid-row: 1/3;
+  } */
+
+  .cajaFormulario {
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px 5px #484848;
+    max-width: 35vw;
+  }
+ 
+  #footer {
+   max-width: 100vw;
+   height: 25vh;
+   border-top: 2px solid rgba(255, 146, 3, 0.8); } 
+
+  .icono {
+   height: 7vh;
+   width: auto;
+   border: 1px solid gray;
+   border-radius: 50%;
+   padding: 4px; }  
+  
+  #footer .info {
+    text-align: center;
+    order: 2;
+    color: #a8a8a8; }
+
+  .logoFooter{
+    order: 1;
+    text-decoration: none;
+    color: #3c4146;
+    font-size: 4vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 4.5vw;
+    margin-right: 2vw;
+    text-shadow: 2px 2px 5px #a8a8a8;}
+
+  .logoFooter:hover{
+    color: var(--colorCinco); }
+  
+  .pie{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2vh;
+  }
+  
+  @media(max-width: 991.98px){
+    .logo{
+      padding-right: 3vw;
+    }
+
+  .gear{
+    font-size: 7vw; }
+
+  .justBeNice{
+    font-size: 10vw;
+    margin-left: 2vw;
+    text-shadow: 2px 2px 5px rgba(255, 146, 3, 0.8); }  
+
+  .logo a {
+    font-size: 5.5vw; }
+
+    #proyectos {
+      display: grid;
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-columns: repeat(2,1fr); }
+    
+    .cajaFormulario {
+      max-width: 50vw; }
+    
+    .logoFooter{
+      font-size: 6vw;
+    }  
+  }
+
+  @media(max-width: 575.98px){
+    .logo{
+      padding-right: 3.5vw;
+    }
+
+    .gear{
+      font-size: 8vw;
+      }
+  
+    .justBeNice{
+      font-size: 11vw;
+      margin-left: 2vw;
+      text-shadow: 2px 2px 5px rgba(255, 146, 3, 0.8); }  
+  
+    .logo a {
+      font-size: 7vw; } 
+  
+    #proyectos {
+      display: grid;
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr;
+    }
+
+    /* #proyectoCoderhouse{
+      grid-column: 1;
+      grid-row: 1;
+    } */
+
+    .cajaFormulario {
+      max-width: 85vw;
+    }
+
+    .desplazamiento{
+      animation-name: desplazamiento;
+      animation-duration: 800ms;
+      animation-iteration-count: 1;
+      animation-timing-function: linear;
+    }
+    
+    @keyframes desplazamiento{
+      0%{
+        /* margin-left: 30vw; */
+        transform: rotate(360deg);
+      }
+      25%{
+        /* margin-left: 24vw; */
+        transform: rotate(270deg);
+      }
+      50%{
+        /* margin-left: 18vw; */
+        transform: rotate(180deg);
+      }
+      75%{
+        /* margin-left: 12vw; */
+        transform: rotate(90deg);
+      }
+      100%{
+        /* margin-left: 0vw; */
+        transform: rotate(0deg);
+      }
+    }
+
+    .logoFooter{
+      font-size: 10vw;
+    }
+  }
