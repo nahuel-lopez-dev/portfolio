@@ -35,6 +35,9 @@
   font-weight: normal;
   font-style: normal; }
 
+body {
+  font-family: 'Open Sans', sans-serif; }
+
 .hoverMenu {
   transition: all 300ms; }
 
@@ -61,6 +64,7 @@
   color: #0d055a;
   text-shadow: 0px 0px 3px #ccc; }
 
+/*animación para hacer girar un elemento*/
 .rodar {
   animation-name: rodar;
   animation-duration: 2s;
@@ -141,24 +145,31 @@
   to {
     transform: translateX(0%); } }
 
-.aboutMe {
-  display: flex;
-  flex-flow: row;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 100vw;
-  height: auto;
-  border-radius: 5px;
-  margin-top: 1vh; }
+/* Sección Acerca de */
+.acerca-de .foto .nombre {
+  color: #545454;
+  font-weight: 300;
+  font-size: 18px;
+  letter-spacing: 2px; }
 
-.fotoPerfil {
-  width: 27vw;
-  height: auto;
-  border-radius: 35%; }
+.acerca-de .infoAcercaDe .titulo {
+  color: #00538c;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 40px;
+  margin-bottom: 30px; }
 
-.parrafoPerfil {
-  margin: 1vh 1vw 1vh 1vw; }
+.acerca-de .infoAcercaDe .resumen {
+  letter-spacing: 1px; }
+
+.acerca-de .infoAcercaDe {
+  font-size: 18px;
+  font-weight: 600;
+  color: #00538c;
+  margin-bottom: 10px; }
+
+.habilidades {
+  color: #00538c; }
 
 .titulo {
   font-style: Arial, Helvetica, sans-serif;
@@ -203,7 +214,7 @@
   margin-bottom: 2rem;
   border-radius: 10px;
   box-shadow: 5px 5px 15px 5px #484848;
-  max-width: 35vw; }
+  max-width: 50vw; }
 
 .btnColorUno {
   background-color: #0d055a;
@@ -277,7 +288,7 @@
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(2, 1fr); }
   .cajaFormulario {
-    max-width: 50vw; }
+    max-width: 75vw; }
   .logoFooter {
     font-size: 6vw; } }
 

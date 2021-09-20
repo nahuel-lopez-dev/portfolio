@@ -81,7 +81,11 @@ $fuenteCuatro: "WebSymbolsRegular";
     font-weight: normal;
     font-style: normal; }  
   
-  .hoverMenu{
+  body {
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+    .hoverMenu{
     transition: all 300ms;
   }  
 
@@ -116,7 +120,8 @@ $fuenteCuatro: "WebSymbolsRegular";
   //   width: 6vw;
   //   height: auto;
   // }  
-
+  
+  /*animación para hacer girar un elemento*/
   .rodar{
     animation-name: rodar;
     animation-duration: 2s;
@@ -219,37 +224,58 @@ $fuenteCuatro: "WebSymbolsRegular";
     }
   }
 
-  .aboutMe{
-    display: flex;
-    flex-flow: row;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 100vw;
-    height: auto;
-    border-radius: 5px;
-    margin-top: 1vh;
-  }  
+  // .aboutMe{
+  //   display: flex;
+  //   flex-flow: row;
+  //   justify-content: center;
+  //   align-items: center;
+  //   text-align: center;
+  //   width: 100vw;
+  //   height: auto;
+  //   border-radius: 5px;
+  //   margin-top: 1vh;
+  // }  
 
-  .fotoPerfil{
-    width: 27vw;
-    height: auto;
-    border-radius: 35%;
-  }
+/* Sección Acerca de */
+.acerca-de .foto .nombre {
+	color: #545454;
+	font-weight: 300;
+	font-size: 18px;
+	letter-spacing: 2px;
+}
 
-  .parrafoPerfil{
-    margin: 1vh 1vw 1vh 1vw;
-  }
+.acerca-de .infoAcercaDe .titulo {
+	color: $colorDos;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: 40px;
+	margin-bottom: 30px;
+}
 
-  .titulo{
-    font-style: Arial, Helvetica, sans-serif;
-    font-style: italic;
-    text-align: center;
-    margin: 20px 0px 20px 0px;
-    background-color: $colorLight;
-    color: $colorTres ;
-    padding: 10px;
-  } 
+.acerca-de .infoAcercaDe .resumen {
+	letter-spacing: 1px;
+}
+
+.acerca-de .infoAcercaDe {
+	font-size: 18px;
+	font-weight: 600;
+	color: $colorDos;
+	margin-bottom: 10px;
+}
+
+.habilidades{
+	color: $colorDos;
+}
+
+.titulo{
+  font-style: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  text-align: center;
+  margin: 20px 0px 20px 0px;
+  background-color: $colorLight;
+  color: $colorTres ;
+  padding: 10px;
+} 
 
   #proyectos {
     display: grid;
@@ -286,7 +312,7 @@ $fuenteCuatro: "WebSymbolsRegular";
     margin-bottom: 2rem;
     border-radius: 10px;
     box-shadow: 5px 5px 15px 5px #484848;
-    max-width: 35vw;
+    max-width: 50vw;
   }
 
   .btnColorUno{
@@ -380,7 +406,7 @@ $fuenteCuatro: "WebSymbolsRegular";
       grid-template-columns: repeat(2,1fr); }
     
     .cajaFormulario {
-      max-width: 50vw; }
+      max-width: 75vw; }
     
     .logoFooter{
       font-size: 6vw;
