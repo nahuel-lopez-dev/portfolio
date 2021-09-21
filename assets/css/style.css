@@ -151,12 +151,12 @@ body {
 
 .acerca-de .foto .nombre {
   color: #545454;
-  font-weight: 300;
+  font-weight: 3000;
   font-size: 18px;
   letter-spacing: 2px; }
 
 .acerca-de .infoAcercaDe .titulo {
-  color: #00538c;
+  color: #545454;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   font-size: 40px;
@@ -168,7 +168,7 @@ body {
 .acerca-de .infoAcercaDe {
   font-size: 18px;
   font-weight: 600;
-  color: #00538c;
+  color: #545454;
   margin-bottom: 10px; }
 
 .habilidades {
