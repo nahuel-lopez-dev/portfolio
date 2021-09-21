@@ -237,6 +237,10 @@ $fuenteCuatro: "WebSymbolsRegular";
   // }  
 
 /* Sección Acerca de */
+.img-fotoPerfil{
+  max-width: 25vw;
+}
+
 .acerca-de .foto .nombre {
 	color: #545454;
 	font-weight: 300;
@@ -376,6 +380,10 @@ $fuenteCuatro: "WebSymbolsRegular";
   }
   
   @media(max-width: 991.98px){
+    .img-fotoPerfil{
+      max-width: 35vw;
+    }
+    
     /*Para sacar la transformación de los items del menú*/
     .hoverMenu{
       transition: none;
@@ -403,7 +411,8 @@ $fuenteCuatro: "WebSymbolsRegular";
     #proyectos {
       display: grid;
       grid-template-rows: repeat(2, 1fr);
-      grid-template-columns: repeat(2,1fr); }
+      grid-template-columns: repeat(2,1fr);
+    }
     
     .cajaFormulario {
       max-width: 75vw; }
@@ -414,6 +423,10 @@ $fuenteCuatro: "WebSymbolsRegular";
   }
 
   @media(max-width: 575.98px){
+    .img-fotoPerfil{
+      max-width: 50vw;
+    }
+
     .logo{
       padding-right: 3.5vw;
     }
@@ -435,6 +448,7 @@ $fuenteCuatro: "WebSymbolsRegular";
       grid-template-rows: 1fr;
       grid-template-columns: 1fr;
       justify-content: center;
+      margin-right: 20px;
     }
 
     .proyecto {

@@ -146,6 +146,9 @@ body {
     transform: translateX(0%); } }
 
 /* Sección Acerca de */
+.img-fotoPerfil {
+  max-width: 25vw; }
+
 .acerca-de .foto .nombre {
   color: #545454;
   font-weight: 300;
@@ -269,6 +272,8 @@ body {
   padding: 2vh; }
 
 @media (max-width: 991.98px) {
+  .img-fotoPerfil {
+    max-width: 35vw; }
   /*Para sacar la transformación de los items del menú*/
   .hoverMenu {
     transition: none; }
@@ -293,6 +298,8 @@ body {
     font-size: 6vw; } }
 
 @media (max-width: 575.98px) {
+  .img-fotoPerfil {
+    max-width: 50vw; }
   .logo {
     padding-right: 3.5vw; }
   .gear {
@@ -306,7 +313,8 @@ body {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
-    justify-content: center; }
+    justify-content: center;
+    margin-right: 20px; }
   .proyecto {
     width: 85vw;
     height: auto;
