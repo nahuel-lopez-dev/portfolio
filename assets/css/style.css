@@ -58,6 +58,9 @@ body {
   border-radius: 5px;
   overflow: hidden; }
 
+#portfolio {
+  font-family: "Nunito", sans-serif; }
+
 .gear {
   font-family: "webSymbolsRegular";
   margin: 0 1.5vw 0 0;
@@ -176,7 +179,7 @@ body {
   color: #00538c; }
 
 .titulo {
-  font-style: Arial, Helvetica, sans-serif;
+  font-style: "Nunito", sans-serif;
   font-style: italic;
   text-align: center;
   margin: 20px 0px 20px 0px;
@@ -255,7 +258,7 @@ body {
   text-decoration: none;
   color: #ccc;
   font-size: 4vw;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Nunito", sans-serif;
   font-style: italic;
   font-weight: bold;
   font-size: 4.5vw;
