@@ -4,7 +4,8 @@
   list-style: none;
   text-decoration: none;
   margin: 0px;
-  padding: 0px; }
+  padding: 0px;
+  box-sizing: border-box; }
 
 /***** Variables globales en SASS *****/
 /** Variables de colores personalizados **/
@@ -184,15 +185,15 @@ body {
   padding: 10px; }
 
 #proyectos {
-  display: grid;
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-  margin-bottom: 5vh;
-  justify-content: center; }
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 0 auto; }
 
 .proyecto {
   display: flex;
+  width: 30%;
+  margin: 1rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -271,9 +272,11 @@ body {
   align-items: center;
   padding: 2vh; }
 
+@media (max-width: 1200px) {
+  .proyecto {
+    width: 40%; } }
+
 @media (max-width: 991.98px) {
-  .img-fotoPerfil {
-    max-width: 35vw; }
   /*Para sacar la transformación de los items del menú*/
   .hoverMenu {
     transition: none; }
@@ -288,14 +291,16 @@ body {
     margin-left: 2vw; }
   .logo a {
     font-size: 5.5vw; }
-  #proyectos {
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(2, 1fr); }
+  .proyecto {
+    width: 45%; }
   .cajaFormulario {
     max-width: 75vw; }
   .logoFooter {
     font-size: 6vw; } }
+
+@media (max-width: 768px) {
+  .proyecto {
+    width: 75%; } }
 
 @media (max-width: 575.98px) {
   .img-fotoPerfil {
@@ -309,16 +314,9 @@ body {
     margin-left: 2vw; }
   .logo a {
     font-size: 7vw; }
-  #proyectos {
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr;
-    justify-content: center;
-    margin-right: 20px; }
   .proyecto {
     width: 85vw;
-    height: auto;
-    margin-left: 25px; }
+    height: auto; }
   .cajaFormulario {
     max-width: 85vw; }
   .desplazamiento {
