@@ -1,14 +1,15 @@
 # **Portfolio** 
 # **Front-end Developer**
 ## **Nahuel-DevOne**
+
 [![Contact Me](https://img.shields.io/badge/Email-informational?style=for-the-badge&logo=Mail.Ru&logoColor=fff&color=23272d)](mailto:nahue.developer1@gmail.com)
 [![LinkedId](https://img.shields.io/badge/LinkedIn-informational?style=for-the-badge&logo=linkedin&logoColor=fff&color=23272d)](https://www.linkedin.com/in/nahuel-developer/)
 [![GitHub Profile](https://img.shields.io/badge/GitHub-informational?style=for-the-badge&logo=GitHub&logoColor=fff&color=23272d)](https://github.com/Nahuel-DevOne)
 
 # *Información:*
 
-## Este es mi portfolio, aún no terminado. Falta agregar proyectos y sigue en modificación mientras estoy estudiando desarrollo web full stack. Por lo que pronto tendrá otras tecnologías y trabajos de backend.
-## Incluye sitios web y programas desarrollados con HTML5, CSS3, SASS, Bootstrap 5, JavaScript, jQuery, React y Firebase.
+### Este es mi portfolio, aún no terminado. Falta agregar proyectos y sigue en modificación mientras estoy estudiando desarrollo web full stack. Por lo que pronto tendrá otras tecnologías y trabajos de backend.
+### Incluye sitios web y programas desarrollados con HTML5, CSS3, SASS, Bootstrap 5, JavaScript, jQuery, React y Firebase.
 ## Aclaración:
 ### jQuery ya no lo estoy usando, estoy usando vanilla JavaScript
 
