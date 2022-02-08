@@ -101,7 +101,7 @@ body {
   margin-left: 2vw;
   font-weight: bold;
   font-style: italic;
-  text-shadow: 2px 2px 5px #484848; }
+  text-shadow: 5px 5px 12px #6c757d; }
 
 .desplazamiento {
   animation-name: desplazamiento;
@@ -191,10 +191,11 @@ h1 {
 
 .titulo {
   font-style: "Nunito", sans-serif;
+  font-style: italic;
   text-align: center;
   margin: 20px 0px 20px 0px;
   background-color: #f8f9fa;
-  color: #0d055a;
+  color: #00538c;
   padding: 1rem; }
 
 /* Sección de los proyectos */

@@ -56,9 +56,9 @@ $colorCuatro: #ccc;
 $colorCinco: #a8a8a8;
 $colorSeis: #484848;
 /*otros colores alternativos*/
-$colorSiete: #37bcf9;
-$colorOcho: rgb(13, 5, 90);
-$colorNueve: #00538c;
+// $colorSiete: #37bcf9;
+// $colorOcho: rgb(13, 5, 90);
+// $colorNueve: #00538c;
 
 /** Variables de fuentes de letras **/
 $fuenteUno: "Nunito", sans-serif;
@@ -162,7 +162,7 @@ body {
   margin-left: 2vw;
   font-weight: bold;
   font-style: italic;
-  text-shadow: 2px 2px 5px $colorSeis; 
+  text-shadow: 5px 5px 12px $colorSecondary; 
 }
 //animación para que algo venga con desplazamiento
 .desplazamiento{
@@ -272,11 +272,11 @@ h1{
 
 .titulo{
   font-style: $fuenteUno;
-  // font-style: italic;
+  font-style: italic;
   text-align: center;
   margin: 20px 0px 20px 0px;
   background-color: $colorLight;
-  color: $colorTres ;
+  color: $colorDos ;
   padding: 1rem;
 } 
 /* Sección de los proyectos */
