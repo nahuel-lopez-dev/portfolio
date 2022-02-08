@@ -223,6 +223,11 @@ body {
     transform: translateX(0%);
   }
 }
+
+h1{
+  font-family: $fuenteUno;
+  margin: 2rem 0.75rem ;
+}
 /* fin de animaciones y clases e id para el header*/
 
 /* Sección Acerca de */
@@ -233,16 +238,13 @@ body {
 .acerca-de .foto .nombre {
 	color: #545454;
 	font-weight: 3000;
-	font-size: 18px;
-	letter-spacing: 2px;
+	letter-spacing: 1.5px;
 }
 
 .acerca-de .infoAcercaDe .titulo {
 	color: #545454;
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 300;
-	font-size: 40px;
-	margin-bottom: 30px;
+	font-weight: 100;
+	margin-bottom: 1.5rem;
 }
 
 .acerca-de .infoAcercaDe .resumen {
@@ -256,18 +258,26 @@ body {
 	margin-bottom: 10px;
 }
 
+.nombre{
+  font-size: 1.5rem;
+}
+
+.resumen{
+  font-size: 1.5rem;
+}
+
 .habilidades{
 	color: $colorDos;
 }
 
 .titulo{
   font-style: $fuenteUno;
-  font-style: italic;
+  // font-style: italic;
   text-align: center;
   margin: 20px 0px 20px 0px;
   background-color: $colorLight;
   color: $colorTres ;
-  padding: 10px;
+  padding: 1rem;
 } 
 /* Sección de los proyectos */
 //id para estructurar la organización de los proyectos en general
@@ -388,70 +398,91 @@ body {
 @media(max-width: 991.98px){
   /*Para sacar la transformación de los items del menú*/
   .hoverMenu{
-    transition: none;}  
+    transition: none;
+  }  
   
   .hoverMenu:hover{
-    transform: none;}
+    transform: none;
+  }
 
   .logo{
-    padding-right: 3vw;}
+    padding-right: 3vw;
+  }
 
   .gear{
-    font-size: 7vw; }
+    font-size: 7vw;
+  }
 
   .justBeNice{
     font-size: 10vw;
-    margin-left: 2vw;}  
+    margin-left: 2vw;
+  }  
 
   .logo a {
-    font-size: 5.5vw; }
+    font-size: 5.5vw;
+  }
+  
+  .resumen{
+    font-size: 1.25rem;
+  }
 
   .proyecto{
     width: 45%;
   }
     
   .cajaFormulario {
-    max-width: 75vw; }
+    max-width: 75vw;
+  }
     
   .logoFooter{
-    font-size: 6vw;}  
+    font-size: 6vw;
+  }  
 }
 //media query para dispositivos entre tablets y mobile
 @media(max-width: 768px){
   .proyecto{
     width: 75%;
   }
+
+  .img-fotoPerfil{
+    max-width: 40vw;
+  }  
 }
 //media query para mobile
 @media(max-width: 575.98px){
   .img-fotoPerfil{
-    max-width: 50vw;}
+    max-width: 50vw;
+  }
 
   .logo{
-    padding-right: 3.5vw;}
+    padding-right: 3.5vw;
+  }
 
   .gear{
-    font-size: 8vw;}
-  
+    font-size: 8vw;
+  }
+
   .justBeNice{
     font-size: 11vw;
-    margin-left: 2vw;}  
+    margin-left: 2vw;
+  }  
   
   .logo a {
-    font-size: 7vw; } 
+    font-size: 7vw;
+  } 
 
   .proyecto {
     width: 85vw;
     height: auto;
-    // margin-left: 25px;
   }
 
   .cajaFormulario {
-    max-width: 85vw;}
+    max-width: 85vw;
+  }
 
-    .logoFooter{
-      font-size: 10vw;
-    }
+  .logoFooter{
+    font-size: 10vw;
+  }
 
   //cambiando la animación de desplazamiento en Mobile, para adaptarla
   .desplazamiento{

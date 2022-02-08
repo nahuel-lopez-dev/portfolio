@@ -152,6 +152,10 @@ body {
   to {
     transform: translateX(0%); } }
 
+h1 {
+  font-family: "Nunito", sans-serif;
+  margin: 2rem 0.75rem; }
+
 /* fin de animaciones y clases e id para el header*/
 /* Sección Acerca de */
 .img-fotoPerfil {
@@ -160,15 +164,12 @@ body {
 .acerca-de .foto .nombre {
   color: #545454;
   font-weight: 3000;
-  font-size: 18px;
-  letter-spacing: 2px; }
+  letter-spacing: 1.5px; }
 
 .acerca-de .infoAcercaDe .titulo {
   color: #545454;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
-  font-size: 40px;
-  margin-bottom: 30px; }
+  font-weight: 100;
+  margin-bottom: 1.5rem; }
 
 .acerca-de .infoAcercaDe .resumen {
   letter-spacing: 1px; }
@@ -179,17 +180,22 @@ body {
   color: #545454;
   margin-bottom: 10px; }
 
+.nombre {
+  font-size: 1.5rem; }
+
+.resumen {
+  font-size: 1.5rem; }
+
 .habilidades {
   color: #00538c; }
 
 .titulo {
   font-style: "Nunito", sans-serif;
-  font-style: italic;
   text-align: center;
   margin: 20px 0px 20px 0px;
   background-color: #f8f9fa;
   color: #0d055a;
-  padding: 10px; }
+  padding: 1rem; }
 
 /* Sección de los proyectos */
 #proyectos {
@@ -302,6 +308,8 @@ body {
     margin-left: 2vw; }
   .logo a {
     font-size: 5.5vw; }
+  .resumen {
+    font-size: 1.25rem; }
   .proyecto {
     width: 45%; }
   .cajaFormulario {
@@ -311,7 +319,9 @@ body {
 
 @media (max-width: 768px) {
   .proyecto {
-    width: 75%; } }
+    width: 75%; }
+  .img-fotoPerfil {
+    max-width: 40vw; } }
 
 @media (max-width: 575.98px) {
   .img-fotoPerfil {
