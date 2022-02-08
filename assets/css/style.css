@@ -7,15 +7,16 @@
   padding: 0px;
   box-sizing: border-box; }
 
+/*Variables globales en CSS*/
 /***** Variables globales en SASS *****/
 /** Variables de colores personalizados **/
-/** Variables de colores a usar**/
+/*Variables de colores de Bootstrap*/
+/** Variables de colores a usar para mi proyecto**/
 /*Color del logo*/
 /* color de sombra del logo Portfolio, y titulos */
 /* color del botón enviar, simbolo 1 y sombra del simbolo 2 */
 /*Colores de sombras*/
 /*otros colores alternativos*/
-/*Variables de colores de Bootstrap*/
 /** Variables de fuentes de letras **/
 /** Fuentes **/
 @font-face {
@@ -39,6 +40,7 @@
 body {
   font-family: 'Open Sans', sans-serif; }
 
+/* clases para el header */
 .hoverMenu {
   transition: all 300ms; }
 
@@ -68,6 +70,7 @@ body {
   color: #0d055a;
   text-shadow: 0px 0px 3px #ccc; }
 
+/* animaciones */
 /*animación para hacer girar un elemento*/
 .rodar {
   animation-name: rodar;
@@ -123,7 +126,7 @@ body {
     margin-left: 0vw;
     transform: rotate(0deg); } }
 
-/*Transición*/
+/*Transición para agrandar los items*/
 .trans {
   transition: all 1s; }
 
@@ -149,6 +152,7 @@ body {
   to {
     transform: translateX(0%); } }
 
+/* fin de animaciones y clases e id para el header*/
 /* Sección Acerca de */
 .img-fotoPerfil {
   max-width: 25vw; }
@@ -187,6 +191,7 @@ body {
   color: #0d055a;
   padding: 10px; }
 
+/* Sección de los proyectos */
 #proyectos {
   display: flex;
   flex-flow: row wrap;
@@ -217,6 +222,7 @@ body {
   line-height: 10px;
   margin: 15px 0px 15px 0px; }
 
+/* clases para la sección de contacto */
 .cajaFormulario {
   margin-bottom: 2rem;
   border-radius: 10px;
@@ -237,6 +243,7 @@ body {
 .btnColorDos:hover {
   background-color: #ccc; }
 
+/* clases para el footer */
 #footer {
   max-width: 100vw;
   height: 25vh; }
@@ -275,6 +282,7 @@ body {
   align-items: center;
   padding: 2vh; }
 
+/* media querys para una mejor adaptación */
 @media (max-width: 1200px) {
   .proyecto {
     width: 40%; } }
@@ -322,6 +330,8 @@ body {
     height: auto; }
   .cajaFormulario {
     max-width: 85vw; }
+  .logoFooter {
+    font-size: 10vw; }
   .desplazamiento {
     animation-name: desplazamiento;
     animation-duration: 1200ms;
@@ -342,6 +352,4 @@ body {
       transform: rotate(90deg); }
     100% {
       /* margin-left: 0vw; */
-      transform: rotate(0deg); } }
-  .logoFooter {
-    font-size: 10vw; } }
+      transform: rotate(0deg); } } }
