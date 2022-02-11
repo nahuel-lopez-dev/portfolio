@@ -31,4 +31,19 @@
 - [GitHub](https://github.com/)
 - Entre otras
 
+[![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)](https://GitHub.com/Nahuel-Devone/)
+
 #### *¡Thanks a lot for reading me!* _Yours sincerely_... "**DevOne**".
+
+<div align="right">
+
+  <!-- Contador de forks -->
+  [![Forks][forks-shield]][forks-url]
+
+  <!-- MARKDOWN LINKS & IMAGES -->
+  <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+  [forks-shield]: https://img.shields.io/github/forks/nahuel-devone/ReadMeTemplate?style=for-the-badge
+  [forks-url]: https://github.com/nahuel-devone/ReadMeTemplate/network/members
+
+</div>
+
