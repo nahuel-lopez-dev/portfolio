@@ -1,6 +1,6 @@
-# **Portfolio** 
-# **Front-end Developer**
-## **Nahuel-DevOne**
+# **`Portfolio`** 
+# **`Front-end Developer`**
+## **`Nahuel-DevOne`**
 
 [![Contact Me](https://img.shields.io/badge/Email-informational?style=for-the-badge&logo=Mail.Ru&logoColor=fff&color=23272d)](mailto:nahue.developer1@gmail.com)
 [![LinkedId](https://img.shields.io/badge/LinkedIn-informational?style=for-the-badge&logo=linkedin&logoColor=fff&color=23272d)](https://www.linkedin.com/in/nahuel-developer/)
