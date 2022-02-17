@@ -102,6 +102,8 @@ body {
 //Id para trabajar exclusivamente el texto 'Portfolio'
 #portfolio{
   font-family: $fuenteUno;
+  color: $colorCinco;
+  text-shadow: 2px 2px 5px $colorSeis;
   // text-transform: uppercase;
 }
 //Usando webSymbolsRegular => S = rueda
@@ -150,7 +152,7 @@ body {
   margin-left: 2vw;
   font-weight: bold;
   font-style: italic;
-  text-shadow: 5px 5px 12px $colorSecondary; 
+  text-shadow: 7px 7px 15px $colorSecondary; 
 }
 //animación para que algo venga con desplazamiento
 .desplazamiento{
@@ -210,6 +212,15 @@ body {
     transform: translateX(0%);
   }
 }
+//efecto hover en Portfolio
+#portfolio:hover{
+  color: $colorDos;
+}
+.nav-item a:hover{
+  text-decoration: underline;
+}
+/* fin de animaciones, etiquetas, clases e id para el header*/
+
 //etiqueta para el h1
 h1{
   font-family: $fuenteUno;
@@ -217,7 +228,6 @@ h1{
   text-align: center;
   margin: 2rem 0.75rem ;
 }
-/* fin de animaciones, etiquetas, clases e id para el header*/
 
 /* Sección Acerca de */
 //clase para todos los titulos de cada sección
@@ -230,7 +240,7 @@ h1{
   color: $colorTres;
   padding: 1rem;
 }
-.img-fotoPerfil{
+.imgFotoPerfil{
   max-width: 25vw;
 }
 
@@ -330,7 +340,7 @@ h1{
 }
 //hover en el botón de resetear
 .btnColorDos:hover{
-    background-color: $colorSeis;
+    background-color: $colorCinco;
 }
 
 /* clases para el footer */
@@ -346,34 +356,39 @@ h1{
  width: auto;
  border: 1px solid $colorCinco;
  border-radius: 50%;
- padding: 4px; }  
+ padding: 4px; 
+}  
   
 #footer .info {
   text-align: center;
   order: 2;
-  color: $colorCinco; }
+  color: $colorCinco; 
+}
 
 .logoFooter{
   order: 1;
   text-decoration: none;
-  color: $colorCuatro;
+  color: $colorCinco;
   font-size: 4vw;
   font-family: $fuenteUno;
   font-style: italic;
   font-weight: bold;
   font-size: 4.5vw;
   margin-right: 2vw;
-  text-shadow: 2px 2px 5px $colorCinco;}
+  text-shadow: 2px 2px 5px $colorSeis;
+}
 
 .logoFooter:hover{
   color: $colorDos;
-  text-shadow: 2px 2px 5px $colorDos; }
+  text-shadow: 2px 2px 5px $colorDos; 
+}
   
 .pie{
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2vh;}
+  padding: 2vh;
+}
 
 /* media querys para una mejor adaptación */
 //media query específica  
@@ -432,13 +447,13 @@ h1{
     width: 75%;
   }
 
-  .img-fotoPerfil{
+  .imgFotoPerfil{
     max-width: 40vw;
   }  
 }
 //media query para mobile
 @media(max-width: 575.98px){
-  .img-fotoPerfil{
+  .imgFotoPerfil{
     max-width: 50vw;
   }
 

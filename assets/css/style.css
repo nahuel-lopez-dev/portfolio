@@ -63,7 +63,9 @@ body {
   overflow: hidden; }
 
 #portfolio {
-  font-family: "Nunito", sans-serif; }
+  font-family: "Nunito", sans-serif;
+  color: #a8a8a8;
+  text-shadow: 2px 2px 5px #484848; }
 
 .gear {
   font-family: "webSymbolsRegular";
@@ -103,7 +105,7 @@ body {
   margin-left: 2vw;
   font-weight: bold;
   font-style: italic;
-  text-shadow: 5px 5px 12px #6c757d; }
+  text-shadow: 7px 7px 15px #6c757d; }
 
 .desplazamiento {
   animation-name: desplazamiento;
@@ -154,13 +156,19 @@ body {
   to {
     transform: translateX(0%); } }
 
+#portfolio:hover {
+  color: #0d055a; }
+
+.nav-item a:hover {
+  text-decoration: underline; }
+
+/* fin de animaciones, etiquetas, clases e id para el header*/
 h1 {
   font-family: "Nunito", sans-serif;
   color: #212529;
   text-align: center;
   margin: 2rem 0.75rem; }
 
-/* fin de animaciones, etiquetas, clases e id para el header*/
 /* Sección Acerca de */
 .titulo {
   font-style: "Nunito", sans-serif;
@@ -171,7 +179,7 @@ h1 {
   color: #00538c;
   padding: 1rem; }
 
-.img-fotoPerfil {
+.imgFotoPerfil {
   max-width: 25vw; }
 
 .acercaDe .foto .nombre {
@@ -250,7 +258,7 @@ h1 {
   font-family: "Nunito", sans-serif; }
 
 .btnColorDos:hover {
-  background-color: #484848; }
+  background-color: #a8a8a8; }
 
 /* clases para el footer */
 #footer {
@@ -273,14 +281,14 @@ h1 {
 .logoFooter {
   order: 1;
   text-decoration: none;
-  color: #ccc;
+  color: #a8a8a8;
   font-size: 4vw;
   font-family: "Nunito", sans-serif;
   font-style: italic;
   font-weight: bold;
   font-size: 4.5vw;
   margin-right: 2vw;
-  text-shadow: 2px 2px 5px #a8a8a8; }
+  text-shadow: 2px 2px 5px #484848; }
 
 .logoFooter:hover {
   color: #0d055a;
@@ -324,11 +332,11 @@ h1 {
 @media (max-width: 768px) {
   .proyecto {
     width: 75%; }
-  .img-fotoPerfil {
+  .imgFotoPerfil {
     max-width: 40vw; } }
 
 @media (max-width: 575.98px) {
-  .img-fotoPerfil {
+  .imgFotoPerfil {
     max-width: 50vw; }
   .logo {
     padding-right: 3.5vw; }
