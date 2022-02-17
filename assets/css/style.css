@@ -11,10 +11,11 @@
 /** Variables de colores personalizados **/
 /*Variables de colores de Bootstrap*/
 /** Variables de colores a usar para mi proyecto**/
-/*Color del logo*/
-/* color de sombra del logo Portfolio, y titulos */
-/* color del botón enviar, simbolo 1 y sombra del simbolo 2 */
+/*Color de Portfolio header y h1 con frase*/
+/* color del simbolo 1, sombra del simbolo 2 y botón enviar*/
+/* color de titulos, hover enviar y hover Portfolio */
 /*Colores de sombras*/
+/*Color los background del header, titulos y footer*/
 /** Variables de fuentes de letras **/
 /** Fuentes **/
 @font-face {
@@ -39,6 +40,9 @@ body {
   font-family: 'Open Sans', sans-serif; }
 
 /* clases para el header */
+#nav {
+  background-color: #f8f9fa; }
+
 .hoverMenu {
   transition: all 300ms; }
 
@@ -152,41 +156,12 @@ body {
 
 h1 {
   font-family: "Nunito", sans-serif;
+  color: #212529;
+  text-align: center;
   margin: 2rem 0.75rem; }
 
 /* fin de animaciones, etiquetas, clases e id para el header*/
 /* Sección Acerca de */
-.img-fotoPerfil {
-  max-width: 25vw; }
-
-.acerca-de .foto .nombre {
-  color: #545454;
-  font-weight: 3000;
-  letter-spacing: 1.5px; }
-
-.acerca-de .infoAcercaDe .titulo {
-  color: #545454;
-  font-weight: 100;
-  margin-bottom: 1.5rem; }
-
-.acerca-de .infoAcercaDe .resumen {
-  letter-spacing: 1px; }
-
-.acerca-de .infoAcercaDe {
-  font-size: 18px;
-  font-weight: 600;
-  color: #545454;
-  margin-bottom: 10px; }
-
-.nombre {
-  font-size: 1.5rem; }
-
-.resumen {
-  font-size: 1.5rem; }
-
-.habilidades {
-  color: #00538c; }
-
 .titulo {
   font-style: "Nunito", sans-serif;
   font-style: italic;
@@ -195,6 +170,31 @@ h1 {
   background-color: #f8f9fa;
   color: #00538c;
   padding: 1rem; }
+
+.img-fotoPerfil {
+  max-width: 25vw; }
+
+.acercaDe .foto .nombre {
+  color: #3c4146;
+  font-size: 18px;
+  font-weight: 1200;
+  margin-bottom: 8px;
+  letter-spacing: 1px; }
+
+.acercaDe .infoAcercaDe {
+  color: #3c4146;
+  font-weight: 600;
+  margin-bottom: 1.25rem; }
+
+.acercaDe .infoAcercaDe .resumen {
+  letter-spacing: 1px; }
+
+.resumen {
+  font-size: 1.5rem; }
+
+.habilidades {
+  margin-top: 1.5rem;
+  color: #00538c; }
 
 /* Sección de los proyectos */
 #proyectos {
@@ -231,11 +231,11 @@ h1 {
   line-height: 10px;
   margin: 15px 0px 15px 0px; }
 
-/* clases para la sección de contacto */
+/*clases para la sección de contacto*/
 .cajaFormulario {
   margin-bottom: 2rem;
   border-radius: 10px;
-  box-shadow: 5px 5px 15px 5px #484848;
+  box-shadow: 5px 5px 15px 10px #a8a8a8;
   max-width: 50vw; }
 
 .btnColorUno {
@@ -246,16 +246,17 @@ h1 {
   background-color: #00538c; }
 
 .btnColorDos {
-  background-color: #a8a8a8;
+  background-color: #3c4146;
   font-family: "Nunito", sans-serif; }
 
 .btnColorDos:hover {
-  background-color: #ccc; }
+  background-color: #484848; }
 
 /* clases para el footer */
 #footer {
   max-width: 100vw;
-  height: 25vh; }
+  height: 25vh;
+  background-color: #f8f9fa; }
 
 .icono {
   height: 7vh;
@@ -282,7 +283,7 @@ h1 {
   text-shadow: 2px 2px 5px #a8a8a8; }
 
 .logoFooter:hover {
-  color: #00538c;
+  color: #0d055a;
   text-shadow: 2px 2px 5px #0d055a; }
 
 .pie {
