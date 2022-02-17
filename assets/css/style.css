@@ -7,7 +7,6 @@
   padding: 0px;
   box-sizing: border-box; }
 
-/*Variables globales en CSS*/
 /***** Variables globales en SASS *****/
 /** Variables de colores personalizados **/
 /*Variables de colores de Bootstrap*/
@@ -16,7 +15,6 @@
 /* color de sombra del logo Portfolio, y titulos */
 /* color del botón enviar, simbolo 1 y sombra del simbolo 2 */
 /*Colores de sombras*/
-/*otros colores alternativos*/
 /** Variables de fuentes de letras **/
 /** Fuentes **/
 @font-face {
@@ -128,7 +126,7 @@ body {
 
 /*Transición para agrandar los items*/
 .trans {
-  transition: all 1s; }
+  transition: 1s all; }
 
 .trans:hover {
   transform: scale(1.1); }
@@ -156,7 +154,7 @@ h1 {
   font-family: "Nunito", sans-serif;
   margin: 2rem 0.75rem; }
 
-/* fin de animaciones y clases e id para el header*/
+/* fin de animaciones, etiquetas, clases e id para el header*/
 /* Sección Acerca de */
 .img-fotoPerfil {
   max-width: 25vw; }
@@ -215,7 +213,11 @@ h1 {
   text-align: center;
   border: 2px solid #ccc;
   border-radius: 5px;
-  box-shadow: 0px 0px 5px #ccc inset; }
+  box-shadow: 0px 0px 5px #ccc inset;
+  transition: 1s all; }
+
+.proyecto:hover {
+  opacity: 0.6; }
 
 .img {
   /*640 ancho x 426 alto*/
