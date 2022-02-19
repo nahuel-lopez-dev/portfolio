@@ -99,18 +99,6 @@ body {
   border-radius: 5px;
   overflow: hidden;
 }
-//Id para trabajar exclusivamente el texto 'Portfolio'
-// #marcaPersonal{
-//   font-family: $fuenteUno;
-//   font-size: 2.5rem;
-//   color: $colorDos;
-//   text-shadow: 2px 2px 5px $colorSeis;
-//   // text-transform: uppercase;
-// }
-//efecto hover en Portfolio
-// #marcaPersonal:hover{
-//   color: $colorCinco;
-// }
 //Usando webSymbolsRegular => S = rueda
 .gear{
   font-family: "webSymbolsRegular";
@@ -221,24 +209,57 @@ body {
 .nav-item a:hover{
   text-decoration: underline;
 }
+//para darle formato a los iconos de las redes sociales
+.iconoRedesSociales {
+  height: 8vh;
+  width: auto;
+  background-color: $colorUno;
+  border-radius: 50%;
+  padding: 4px;
+  margin: 1.5rem 0 0 2.5rem; 
+ }
 /* fin de animaciones, etiquetas, clases e id para el header*/
 
-// .presentacion{
-//   display: flex;
-// }
-
+//clase para contener elementos al 90% de la pantalla
+.contenedor{
+  max-width: 90%;
+}
+/* Sección de presentación */
+//acercaDe = presentación
+.presentacion{
+  color: $colorSiete;
+  display: flex;
+  margin: 0 0 0 5rem;
+  align-items: center;
+  letter-spacing: 1px;
+}
 //etiqueta para el h1
 h1{
   font-family: $fuenteUno;
   color: $colorUno;
   text-align: start; 
 }
+//clases que comparten las mismas propiedades
+.presentacion .foto .nombre{
+  margin-bottom: 8px;
+}
+//para asignar un orde a la información de presentación y la foto
+//en desktop, la presentación va primero y luego la foto
+.presentacionInfo{
+  order: 1;
+}
+.foto{
+  order: 2;
+}
+//clase exclusiva para manejar la foto de perfil
+.imgFotoPerfil{
+  max-width: 25vw;
+}
+.nombre{
+  font-size: 1rem;
+}
 
-// .presentacionParrafo{
-//   margin: 2rem 0.75rem ;
-// }
-
-/* Sección Acerca de */
+/* Sección sobre mí */
 //clase para todos los titulos de cada sección
 .titulo{
   font-style: $fuenteUno;
@@ -249,40 +270,19 @@ h1{
   color: $colorTres;
   padding: 1rem;
 }
-
-.presentacion{
-  display: flex;
-  margin: 0 0 0 5rem;
-}
-
-.acercaDe .foto .nombre {
-  color: $colorSiete;
-  font-size: 18px;
-	font-weight: 1200;
-  margin-bottom: 8px;
-	letter-spacing: 1px;
-}
-
-.infoAcercaDe{
-  order: 1;
-}
-
-.foto{
-  order: 2;
-}
-
-.imgFotoPerfil{
-  max-width: 27vw;
-}
 .resumen{
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   letter-spacing: 1px;
 }
 
 .sobreMi{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: start;
+}
+
+.sobreMiTexto{
+  margin-left: 2rem;
 }
 
 .habilidades{
@@ -295,13 +295,6 @@ h1{
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  //No son necesarias estas propiedades
-  //display: grid;
-  // grid-template-rows: repeat(2, 1fr);
-  // grid-template-columns: repeat(3,1fr);
-  // gap: 30px;
-  // margin-bottom: 5vh;
-  // justify-content: center;
   margin: 0 auto; 
 }
 //clase para darle forma a casa proyecto  
@@ -369,14 +362,6 @@ h1{
  height: 25vh;
  background-color: $colorContenedor; 
 } 
-//para darle formato a los iconos de las redes sociales
-.icono {
- height: 7vh;
- width: auto;
- border: 1px solid $colorCinco;
- border-radius: 50%;
- padding: 4px; 
-}  
   
 #footer .info {
   text-align: center;
@@ -466,7 +451,7 @@ h1{
     order: 1
   }
 
-  .infoAcercaDe{
+  .presentacionInfo{
     order: 2;
   }
   

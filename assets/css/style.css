@@ -154,13 +154,47 @@ body {
 .nav-item a:hover {
   text-decoration: underline; }
 
+.iconoRedesSociales {
+  height: 8vh;
+  width: auto;
+  background-color: #212529;
+  border-radius: 50%;
+  padding: 4px;
+  margin: 1.5rem 0 0 2.5rem; }
+
 /* fin de animaciones, etiquetas, clases e id para el header*/
+.contenedor {
+  max-width: 90%; }
+
+/* Sección de presentación */
+.presentacion {
+  color: #3c4146;
+  display: flex;
+  margin: 0 0 0 5rem;
+  align-items: center;
+  letter-spacing: 1px; }
+
 h1 {
   font-family: "Nunito", sans-serif;
   color: #212529;
   text-align: start; }
 
-/* Sección Acerca de */
+.presentacion .foto .nombre {
+  margin-bottom: 8px; }
+
+.presentacionInfo {
+  order: 1; }
+
+.foto {
+  order: 2; }
+
+.imgFotoPerfil {
+  max-width: 25vw; }
+
+.nombre {
+  font-size: 1rem; }
+
+/* Sección sobre mí */
 .titulo {
   font-style: "Nunito", sans-serif;
   font-style: italic;
@@ -170,34 +204,17 @@ h1 {
   color: #00538c;
   padding: 1rem; }
 
-.presentacion {
-  display: flex;
-  margin: 0 0 0 5rem; }
-
-.acercaDe .foto .nombre {
-  color: #3c4146;
-  font-size: 18px;
-  font-weight: 1200;
-  margin-bottom: 8px;
-  letter-spacing: 1px; }
-
-.infoAcercaDe {
-  order: 1; }
-
-.foto {
-  order: 2; }
-
-.imgFotoPerfil {
-  max-width: 27vw; }
-
 .resumen {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   letter-spacing: 1px; }
 
 .sobreMi {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: start; }
+
+.sobreMiTexto {
+  margin-left: 2rem; }
 
 .habilidades {
   margin-top: 1.5rem;
@@ -265,13 +282,6 @@ h1 {
   height: 25vh;
   background-color: #f8f9fa; }
 
-.icono {
-  height: 7vh;
-  width: auto;
-  border: 1px solid #a8a8a8;
-  border-radius: 50%;
-  padding: 4px; }
-
 #footer .info {
   text-align: center;
   order: 2;
@@ -332,7 +342,7 @@ h1 {
     display: none; }
   .foto {
     order: 1; }
-  .infoAcercaDe {
+  .presentacionInfo {
     order: 2; }
   .resumen {
     font-size: 1.25rem; }

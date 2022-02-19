@@ -73,54 +73,73 @@
 
     <!-- Acá empieza el contenido principal -->
     <main>
-        <div>
-            <div class="presentacion acercaDe align-items-center mb-4">
-                <div class="col-12 col-md-10 col-lg-7 infoAcercaDe">
-                    <h1 class="display-2">¡Hola! Me llamo Nahuel y soy Desarrollador Front-end</h1>
-                    <p class="fs-3 lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, tenetur deserunt reiciendis dolore quibusdam consectetur maiores voluptates numquam in asperiores incidunt illo quaerat expedita vel, harum earum aliquam repellat adipisci.</p>
+        <!-- Sección de presentación -->
+        <section>
+            <div class="presentacion contenedor mb-4">
+                <!-- Texto de presentación e iconos de redes sociales-->
+                <div class="presentacionInfo">
+                    <h1>¡Hola! Me llamo Nahuel y soy Desarrollador Front-end</h1>
+                    <p class="fs-3 lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, tenetur deserunt
+                        reiciendis dolore quibusdam consectetur maiores voluptates numquam in asperiores incidunt illo
+                        quaerat expedita vel, harum earum aliquam repellat adipisci.</p>
+                    <a href="https://www.linkedin.com/in/nahuel-developer/" target="_blank" class="m-2">
+                        <img src="./img/linkedin.svg" alt="Imagen del icono de linkedIn" class="iconoRedesSociales">
+                    </a>
+                    <a href="https://github.com/Nahuel-DevOne/" target="_blank" class="m-2">
+                        <img src="./img/github.svg" alt="Imagen del icono de GitHub" class="iconoRedesSociales">
+                    </a>
                 </div>
-                <div class="col-12 col-md-10 col-lg-5 foto text-center mb-2">
-                    <img id="about" src="./img/FotoPerfil.png" class="rounded-circle mb-3 imgFotoPerfil" alt="">
+                <!-- foto de perfil y presentación destacada debajo-->
+                <div class="foto text-center mb-2">
+                    <img id="about" src="./img/FotoPerfil.png" class="rounded-circle mb-3 imgFotoPerfil" alt="imagen de mi foto de perfil">
                     <p class="nombre">Nahuel Lopez</p>
                     <p class="nombre">Front-end Developer</p>
                 </div>
             </div>
+        </section>
+        <!-- Fin de la sección de presentación-->
+
         <!-- Sección acerca de mí -->
         <section>
             <h2 class="titulo fs-1 mt-4">Sobre mí</h2>
-            <div>
-                <div class="row acercaDe px-4 mb-4">
-                    <div class="col-lg-9 col-md-12 sobreMi">
-                        <p class="resumen">Hi there! my name is Nahuel and I am a Front-end developer and math teacher.
-                            I live in Argentina (Bs. As.), and I'm studying full stack web development to change careers
-                            and dedicate myself fully to programming.</p>
-
-                        <p class="resumen">I found in web programming a window to many things that fascinate me, such as
-                            working in a team and solving challenges that put my ingenuity and creativity to the test.
-                            At this moment, I am looking to be part of a company in which I can pour all my knowledge
-                            and allow me to continue training to be a better programmer every day.</p>
-                        <p class="resumen">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam nulla tempore esse exercitationem dolorum saepe culpa sapiente delectus? Culpa pariatur, rerum harum consequuntur mollitia distinctio ad recusandae consequatur dolores quas?</p>    
-                    </div>
+            <div class="contenedor sobreMi">
+                <div class="sobreMiTexto">
+                    <p class="resumen">Hi there! my name is Nahuel and I am a Front-end developer and math teacher.
+                        I live in Argentina (Bs. As.), and I'm studying full stack web development to change careers
+                        and dedicate myself fully to programming.</p>
+                    <p class="resumen">I found in web programming a window to many things that fascinate me, such as
+                        working in a team and solving challenges that put my ingenuity and creativity to the test.
+                        At this moment, I am looking to be part of a company in which I can pour all my knowledge
+                        and allow me to continue training to be a better programmer every day.</p>
+                    <p class="resumen">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam nulla tempore
+                        esse exercitationem dolorum saepe culpa sapiente delectus? Culpa pariatur, rerum harum
+                        consequuntur mollitia distinctio ad recusandae consequatur dolores quas?</p>
+                    <h3 class="habilidades">Hobbies:</h3>
+                    <p class="resumen">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam nulla tempore
+                        esse exercitationem dolorum saepe culpa sapiente delectus? Culpa pariatur, rerum harum
+                        consequuntur mollitia distinctio ad recusandae consequatur dolores quas?</p>
                 </div>
             </div>
         </section>
-        <section>
         <!-- Fin de la sección acerca de mí -->
-        
-        <!-- Sección de skills-->
+
+        <!-- Sección de skills (habilidades técnicas y blandas)-->
         <section>
             <h2 class="titulo fs-1 mt-4">Skills</h2>
-            <div>
+            <div class="contenedor">
                 <p class="habilidades fs-4 m-3">Technical skills:</p>
-                <p class="habilidades fs-5 m-3">HTML5 - CSS3 - SASS - Bootstrap - Git - GitHub - JavaScript - React - Firebase - Node.js</p>
+                <p class="habilidades fs-5 m-3">HTML5 - CSS3 - SASS - Bootstrap - Git - GitHub - JavaScript - React
+                    - Firebase - Node.js</p>
             </div>
-            <div>
+            <div class="contenedor">
                 <p class="habilidades fs-4 m-3">Soft skills:</p>
-                <p class="habilidades fs-5 m-3">HTML5 - CSS3 - SASS - Bootstrap - Git - GitHub - JavaScript - React - Firebase - Node.js</p>
+                <p class="habilidades fs-5 m-3">HTML5 - CSS3 - SASS - Bootstrap - Git - GitHub - JavaScript - React
+                    - Firebase - Node.js</p>
             </div>
         </section>
+        <!-- Fin de la sección de skills -->
 
-        <!-- Sección sobre los proyectos -->
+        <!-- Sección sobre los proyectos destacados -->
         <section>
             <h2 class="titulo fs-1">Proyectos</h2>
             <div class="container">
@@ -217,8 +236,8 @@
                 <div class="row">
                     <div class="form-group col-md-6">
                         <label for="first_name"></label>
-                        <input id="first_name" name="first_name" type="text" class="form-control" placeholder="Tu nombre o empresa"
-                            required>
+                        <input id="first_name" name="first_name" type="text" class="form-control"
+                            placeholder="Tu nombre o empresa" required>
                     </div>
                     <div class="form-group col-md-6 mb-3">
                         <label for="email"></label>
@@ -230,7 +249,8 @@
                     <input id="email" type="email" class="form-control" placeholder="Asunto" required>
                 </div>
                 <div class="col-md-12 text-white">
-                    <label for="exampleFormControlTextarea1" class="form-label m-2 text-body fs-5">Escribe tu mensaje aquí:</label>
+                    <label for="exampleFormControlTextarea1" class="form-label m-2 text-body fs-5">Escribe tu
+                        mensaje aquí:</label>
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
                 </div>
                 <!-- <div class="col-12 m-2 mt-3">
@@ -250,19 +270,19 @@
         </section>
     </main>
     <!-- Fin de la sección de contacto -->
-    <!-- Acá termina la sección de contenidos -->
+    <!-- Acá termina el contenido principal -->
 
     <!-- Acá empieza el pie de página -->
     <footer id="footer" class="border-top">
         <div class="container-fluid">
             <div class="column pie">
-                <a href="#" class="logoFooter">Portfolio</a>
-                <a href="https://github.com/Nahuel-DevOne/" target="_blank" class="m-2"><img src="./img/github.svg"
+                <a href="#" class="logoFooter">Portafolio</a>
+                <!-- <a href="https://github.com/Nahuel-DevOne/" target="_blank" class="m-2"><img src="./img/github.svg"
                         alt="Imagen del icono de GitHub" class="icono"></a>
                 <a href="https://www.linkedin.com/in/nahuel-developer/" target="_blank" class="m-2"><img
-                        src="./img/linkedin.svg" alt="Imagen del icono de linkedIn" class="icono"></a>
+                        src="./img/linkedin.svg" alt="Imagen del icono de linkedIn" class="icono"></a> -->
             </div>
-            <div class="info fs-4 mb-5">Nahuel-DevOne &copy; 2021</div>
+            <div class="info fs-4 mb-5">&copy;2022 Desarrollado por Nahuel-DevOne</div>
         </div>
     </footer>
     <!-- Acá termina el pie de página -->
