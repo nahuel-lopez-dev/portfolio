@@ -95,23 +95,28 @@ body {
   padding-right: 2vw;
 }
 .logo:hover{
-  background-color: $colorCuatro;
+  color: $colorSeis;
   border-radius: 5px;
   overflow: hidden;
 }
 //Id para trabajar exclusivamente el texto 'Portfolio'
-#portfolio{
-  font-family: $fuenteUno;
-  color: $colorCinco;
-  text-shadow: 2px 2px 5px $colorSeis;
-  // text-transform: uppercase;
-}
+// #marcaPersonal{
+//   font-family: $fuenteUno;
+//   font-size: 2.5rem;
+//   color: $colorDos;
+//   text-shadow: 2px 2px 5px $colorSeis;
+//   // text-transform: uppercase;
+// }
+//efecto hover en Portfolio
+// #marcaPersonal:hover{
+//   color: $colorCinco;
+// }
 //Usando webSymbolsRegular => S = rueda
 .gear{
   font-family: "webSymbolsRegular";
   margin: 0 1.5vw 0 0;
-  font-size: 5vw;
-  color: $colorDos;
+  font-size: 8vh;
+  // color: $colorDos;
   text-shadow: 0px 0px 3px $colorCuatro;
   }
 /* animaciones */
@@ -145,11 +150,34 @@ body {
     transform: translateY(0%);
   }
 }
+//clase para el logo y a
+.logo a {
+  text-decoration: none;
+  color: $colorDos;
+  font-family: $fuenteUno;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 3.5vh;
+  text-shadow: 2px 2px 5px $colorCuatro; }
+//efecto hover para el logo y a con animación  
+.logo:hover a{
+  animation: fromRight 300ms linear;
+  color: $colorSeis;
+}  
+@keyframes fromRight{
+  from{
+    transform: translateX(200%);
+  }
+  to{
+    transform: translateX(0%);
+  }
+}
 //clase para el emblema 'just be nice'  
 .justBeNice{
   font-family: "webSymbolsRegular";
-  font-size: 7vw;
+  font-size: 12vh;
   margin-left: 2vw;
+  margin-bottom: 1.9rem;
   font-weight: bold;
   font-style: italic;
   text-shadow: 7px 7px 15px $colorSecondary; 
@@ -190,44 +218,25 @@ body {
 .trans:hover {
   transform: scale(1.1);
 }
-//clase para el logo y a
-.logo a {
-  text-decoration: none;
-  color: $colorUno;
-  font-size: 6vw;
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: italic;
-  font-weight: bold;
-  font-size: 4.5vw;
-  text-shadow: 2px 2px 5px $colorCuatro; }
-//efecto hover para el logo y a con animación  
-.logo:hover a{
-  animation: fromRight 300ms linear;
-}  
-@keyframes fromRight{
-  from{
-    transform: translateX(200%);
-  }
-  to{
-    transform: translateX(0%);
-  }
-}
-//efecto hover en Portfolio
-#portfolio:hover{
-  color: $colorDos;
-}
 .nav-item a:hover{
   text-decoration: underline;
 }
 /* fin de animaciones, etiquetas, clases e id para el header*/
 
+// .presentacion{
+//   display: flex;
+// }
+
 //etiqueta para el h1
 h1{
   font-family: $fuenteUno;
   color: $colorUno;
-  text-align: center;
-  margin: 2rem 0.75rem ;
+  text-align: start; 
 }
+
+// .presentacionParrafo{
+//   margin: 2rem 0.75rem ;
+// }
 
 /* Sección Acerca de */
 //clase para todos los titulos de cada sección
@@ -240,30 +249,40 @@ h1{
   color: $colorTres;
   padding: 1rem;
 }
-.imgFotoPerfil{
-  max-width: 25vw;
+
+.presentacion{
+  display: flex;
+  margin: 0 0 0 5rem;
 }
 
 .acercaDe .foto .nombre {
-	color: $colorSiete;
+  color: $colorSiete;
   font-size: 18px;
 	font-weight: 1200;
   margin-bottom: 8px;
 	letter-spacing: 1px;
 }
 
-.acercaDe .infoAcercaDe{
-	color: $colorSiete;
-	font-weight: 600;
-	margin-bottom: 1.25rem;
+.infoAcercaDe{
+  order: 1;
 }
 
-.acercaDe .infoAcercaDe .resumen {
-	letter-spacing: 1px;
+.foto{
+  order: 2;
 }
 
+.imgFotoPerfil{
+  max-width: 27vw;
+}
 .resumen{
   font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.sobreMi{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
 }
 
 .habilidades{
@@ -396,6 +415,9 @@ h1{
   .proyecto{
     width: 40%;
   }
+  .justBeNice{
+    margin-bottom: 1.9rem;
+  }
 }  
 //media query para tablets
 @media(max-width: 991.98px){
@@ -413,16 +435,39 @@ h1{
   }
 
   .gear{
-    font-size: 7vw;
+    font-size: 7vh;
   }
 
   .justBeNice{
-    font-size: 10vw;
+    font-size: 14vh;
     margin-left: 2vw;
+    margin-bottom: 1.8rem;
   }  
 
   .logo a {
-    font-size: 5.5vw;
+    font-size: 6vw;
+  }
+
+  .logo a p{
+    font-size: 4vh;
+  }
+
+  .presentacion{
+    display: flex;
+    flex-direction: column;
+    margin: 0 2rem 0 2rem;
+  }
+
+  .nombre{
+    display: none;
+  }
+
+  .foto{
+    order: 1
+  }
+
+  .infoAcercaDe{
+    order: 2;
   }
   
   .resumen{
@@ -443,16 +488,25 @@ h1{
 }
 //media query para dispositivos entre tablets y mobile
 @media(max-width: 768px){
+  #portfolio{
+    font-size: 1.75rem;
+  }
   .proyecto{
     width: 75%;
   }
 
   .imgFotoPerfil{
     max-width: 40vw;
+  }
+  .justBeNice{
+    margin-bottom: 1.7rem;
   }  
 }
 //media query para mobile
 @media(max-width: 575.98px){
+  #portfolio{
+    font-size: 1.25rem;
+  }
   .imgFotoPerfil{
     max-width: 50vw;
   }
@@ -462,16 +516,17 @@ h1{
   }
 
   .gear{
-    font-size: 8vw;
+    font-size: 5vh;
   }
 
   .justBeNice{
-    font-size: 11vw;
-    margin-left: 2vw;
+    font-size: 10vh;
+    padding-left: 0.5rem;
+    margin-bottom: 1.5rem;
   }  
   
-  .logo a {
-    font-size: 7vw;
+  .logo a p {
+    font-size: 3vh;
   } 
 
   .proyecto {

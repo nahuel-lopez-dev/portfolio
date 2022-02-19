@@ -32,7 +32,10 @@
                 <div class="column">
                     <div class="logo">
                         <span class="gear rodar">S</span>
-                        <a href="#" id="portfolio">Portfolio</a>
+                        <a href="#" id="marcaPersonal">
+                            <p>Nahuel</p>
+                            <p>DevOne</p>
+                        </a>
                         <span class="justBeNice desplazamiento">#</span>
                     </div>
                 </div>
@@ -41,18 +44,24 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto fs-3 m-1 me-5">
+                    <ul class="navbar-nav ms-auto fs-4 m-1 me-5">
                         <!-- <li class="nav-item">
                             <a class="nav-link m-2 hoverMenu" href="#">Home</a>
                         </li> -->
                         <li class="nav-item">
-                            <a class="nav-link m-2 hoverMenu" href="#about">About me</a>
+                            <a class="nav-link m-2 hoverMenu" href="#about">Sobre mí</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link m-2 hoverMenu" href="#proyectos">Projects</a>
+                            <a class="nav-link m-2 hoverMenu" href="#about">Skills</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link m-2 hoverMenu" href="#contact">Contact</a>
+                            <a class="nav-link m-2 hoverMenu" href="#about">Formación</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link m-2 hoverMenu" href="#proyectos">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link m-2 hoverMenu" href="#contact">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -64,19 +73,24 @@
 
     <!-- Acá empieza el contenido principal -->
     <main>
-        <h1 class="display-2">"If you can dream it, I can do it"</h1>
+        <div>
+            <div class="presentacion acercaDe align-items-center mb-4">
+                <div class="col-12 col-md-10 col-lg-7 infoAcercaDe">
+                    <h1 class="display-2">¡Hola! Me llamo Nahuel y soy Desarrollador Front-end</h1>
+                    <p class="fs-3 lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, tenetur deserunt reiciendis dolore quibusdam consectetur maiores voluptates numquam in asperiores incidunt illo quaerat expedita vel, harum earum aliquam repellat adipisci.</p>
+                </div>
+                <div class="col-12 col-md-10 col-lg-5 foto text-center mb-2">
+                    <img id="about" src="./img/FotoPerfil.png" class="rounded-circle mb-3 imgFotoPerfil" alt="">
+                    <p class="nombre">Nahuel Lopez</p>
+                    <p class="nombre">Front-end Developer</p>
+                </div>
+            </div>
         <!-- Sección acerca de mí -->
         <section>
-            <h2 class="titulo fs-1 mt-4">About me</h2>
-            <div class="container">
-                <div class="row acercaDe align-items-center px-4 mb-4">
-                    <div class="col-12 col-lg-5 foto text-center mb-2">
-                        <img id="about" src="./img/FotoPerfil.png" class="rounded-circle mb-3 imgFotoPerfil" alt="">
-                        <p class="nombre">Nahuel Lopez</p>
-                        <p class="nombre">Front-end Developer</p>
-                    </div>
-
-                    <div class="col-12 col-lg-7 infoAcercaDe">
+            <h2 class="titulo fs-1 mt-4">Sobre mí</h2>
+            <div>
+                <div class="row acercaDe px-4 mb-4">
+                    <div class="col-lg-9 col-md-12 sobreMi">
                         <p class="resumen">Hi there! my name is Nahuel and I am a Front-end developer and math teacher.
                             I live in Argentina (Bs. As.), and I'm studying full stack web development to change careers
                             and dedicate myself fully to programming.</p>
@@ -85,20 +99,30 @@
                             working in a team and solving challenges that put my ingenuity and creativity to the test.
                             At this moment, I am looking to be part of a company in which I can pour all my knowledge
                             and allow me to continue training to be a better programmer every day.</p>
-
-                        <p class="habilidades fs-4">Technical skills:</p>
-
-                        <p class="habilidades fs-5">HTML5 - CSS3 - SASS - Bootstrap - Git - GitHub - JavaScript - React - Firebase - Node.js</p>
+                        <p class="resumen">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam nulla tempore esse exercitationem dolorum saepe culpa sapiente delectus? Culpa pariatur, rerum harum consequuntur mollitia distinctio ad recusandae consequatur dolores quas?</p>    
                     </div>
                 </div>
             </div>
         </section>
         <section>
         <!-- Fin de la sección acerca de mí -->
+        
+        <!-- Sección de skills-->
+        <section>
+            <h2 class="titulo fs-1 mt-4">Skills</h2>
+            <div>
+                <p class="habilidades fs-4 m-3">Technical skills:</p>
+                <p class="habilidades fs-5 m-3">HTML5 - CSS3 - SASS - Bootstrap - Git - GitHub - JavaScript - React - Firebase - Node.js</p>
+            </div>
+            <div>
+                <p class="habilidades fs-4 m-3">Soft skills:</p>
+                <p class="habilidades fs-5 m-3">HTML5 - CSS3 - SASS - Bootstrap - Git - GitHub - JavaScript - React - Firebase - Node.js</p>
+            </div>
+        </section>
 
         <!-- Sección sobre los proyectos -->
         <section>
-            <h2 class="titulo fs-1">Projects</h2>
+            <h2 class="titulo fs-1">Proyectos</h2>
             <div class="container">
                 <div id="proyectos" class="mt-4">
                     <article id="proyectoCoderhouse" class="proyecto trans">
@@ -188,22 +212,25 @@
         <!-- Sección de contacto-->
         <section>
             <h2 class="titulo fs-1 mt-5">Contact</h2>
-            <h3 class="text-center text-dark">My email: nahuel.developer1@gmail.com</h3>
+            <!-- <h3 class="text-center text-dark">My email: nahuel.developer1@gmail.com</h3> -->
             <form id="contact" class="container cajaFormulario bg-light mt-5 mb-5">
                 <div class="row">
                     <div class="form-group col-md-6">
                         <label for="first_name"></label>
-                        <input id="first_name" name="first_name" type="text" class="form-control" placeholder="Your name"
+                        <input id="first_name" name="first_name" type="text" class="form-control" placeholder="Tu nombre o empresa"
                             required>
                     </div>
                     <div class="form-group col-md-6 mb-3">
                         <label for="email"></label>
-                        <input id="email" type="email" class="form-control" placeholder="Your email" required>
+                        <input id="email" type="email" class="form-control" placeholder="Tu email" required>
                     </div>
                 </div>
+                <div class="form-group col-md-12 mb-3">
+                    <label for="email"></label>
+                    <input id="email" type="email" class="form-control" placeholder="Asunto" required>
+                </div>
                 <div class="col-md-12 text-white">
-                    <label for="exampleFormControlTextarea1" class="form-label m-2 text-body fs-5">Write your
-                        message here:</label>
+                    <label for="exampleFormControlTextarea1" class="form-label m-2 text-body fs-5">Escribe tu mensaje aquí:</label>
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
                 </div>
                 <!-- <div class="col-12 m-2 mt-3">
@@ -216,8 +243,8 @@
                 </div> -->
                 <div class="form-group text-center">
                     <label></label>
-                    <input type="submit" class="text-white btn btn-lg btnColorUno m-3" value="Send">
-                    <input type="reset" class="text-white btn btn-lg btnColorDos m-3" value="Delete">
+                    <input type="submit" class="text-white btn btn-lg btnColorUno m-3" value="Enviar">
+                    <input type="reset" class="text-white btn btn-lg btnColorDos m-3" value="Borrar">
                 </div>
             </form>
         </section>
