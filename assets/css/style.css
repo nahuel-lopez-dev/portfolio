@@ -39,6 +39,9 @@
 body {
   font-family: 'Open Sans', sans-serif; }
 
+.contenedor {
+  max-width: 90%; }
+
 /* clases para el header */
 #nav {
   background-color: #f8f9fa; }
@@ -154,18 +157,23 @@ body {
 .nav-item a:hover {
   text-decoration: underline; }
 
+.cajaIconosPresentacion {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start; }
+
 .iconoPresentacion {
   height: 8vh;
   width: auto;
   background-color: #212529;
   border-radius: 50%;
-  padding: 4px;
-  margin: 1.5rem 0 0 2.5rem; }
+  padding: 4px; }
+
+.nombreIcono {
+  text-align: center;
+  color: #212529; }
 
 /* fin de animaciones, etiquetas, clases e id para el header*/
-.contenedor {
-  max-width: 90%; }
-
 /* Sección de presentación */
 .presentacion {
   color: #3c4146;
@@ -277,17 +285,9 @@ h1 {
   padding: 6px;
   margin: 1.5rem 2.5rem 0 2.5rem; }
 
-.iconoSkillGit {
-  background-color: #ccc;
-  border-radius: 20%; }
-
-.iconoSkillGitHub {
-  background-color: #ccc;
-  border-radius: 20%; }
-
-.iconoSkillDataBase {
-  background-color: #ccc;
-  border-radius: 20%; }
+/* Sección de formación */
+.formacionTexto {
+  margin-left: 2rem; }
 
 /* Sección de los proyectos */
 #proyectos {
