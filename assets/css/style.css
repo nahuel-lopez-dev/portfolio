@@ -154,7 +154,7 @@ body {
 .nav-item a:hover {
   text-decoration: underline; }
 
-.iconoRedesSociales {
+.iconoPresentacion {
   height: 8vh;
   width: auto;
   background-color: #212529;
@@ -261,6 +261,31 @@ h1 {
 .habilidades {
   margin-top: 1.5rem;
   color: #00538c; }
+
+/* Sección de Skills*/
+.cajaSkills {
+  display: flex;
+  margin: 0 auto; }
+
+.iconoSkill {
+  background-color: #ccc;
+  border-radius: 20%;
+  height: 8vh;
+  width: auto;
+  padding: 6px;
+  margin: 1.5rem 0 0 2.5rem; }
+
+.iconoSkillGit {
+  background-color: #ccc;
+  border-radius: 20%; }
+
+.iconoSkillGitHub {
+  background-color: #ccc;
+  border-radius: 20%; }
+
+.iconoSkillDataBase {
+  background-color: #ccc;
+  border-radius: 20%; }
 
 /* Sección de los proyectos */
 #proyectos {

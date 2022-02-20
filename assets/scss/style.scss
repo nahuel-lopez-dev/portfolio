@@ -210,7 +210,7 @@ body {
   text-decoration: underline;
 }
 //para darle formato a los iconos de las redes sociales
-.iconoRedesSociales {
+.iconoPresentacion{
   height: 8vh;
   width: auto;
   background-color: $colorUno;
@@ -346,6 +346,39 @@ h1{
   margin-top: 1.5rem;
 	color: $colorTres;
 } 
+
+/* Sección de Skills*/
+.cajaSkills{
+  display: flex;
+  margin: 0 auto;
+}
+
+.iconoSkill{
+  background-color: $colorCuatro;
+  border-radius: 20%;
+  height: 8vh;
+  width: auto;
+  // background-color: $colorUno;
+  // border-radius: 20%;
+  padding: 6px;
+  margin: 1.5rem 0 0 2.5rem;
+}
+
+.iconoSkillGit{
+  background-color: $colorCuatro;
+  border-radius: 20%;
+}
+
+.iconoSkillGitHub{
+  background-color: $colorCuatro;
+  border-radius: 20%;
+}
+
+.iconoSkillDataBase{
+  background-color: $colorCuatro;
+  border-radius: 20%;
+}
+
 /* Sección de los proyectos */
 //id para estructurar la organización de los proyectos en general
 #proyectos {
