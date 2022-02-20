@@ -255,8 +255,65 @@ h1{
 .imgFotoPerfil{
   max-width: 25vw;
 }
+//clase para manejar la información debajo de la foto
 .nombre{
   font-size: 1rem;
+}
+/* animaciones */
+//animación para la foto
+.fadeIn{
+	animation-name: fadeIn;	
+	animation-duration: 2s;	
+	animation-timing-function: ease-in-out;			
+	visibility: visible !important;	
+}
+@keyframes fadeIn {
+	0% {
+		transform: scale(0);
+		opacity: 0.0;		
+	}
+	60% {
+		transform: scale(1.1);	
+	}
+	80% {
+		transform: scale(0.9);
+		opacity: 1;	
+	}	
+	100% {
+		transform: scale(1);
+		opacity: 1;	
+	}		
+}
+//animación para los textos
+.stretchRight{
+	animation-name: stretchRight;	
+	animation-duration: 2s;	
+	animation-timing-function: ease-out;		
+	transform-origin: 0% 0%;
+	// -ms-transform-origin: 0% 0%; 		
+}
+@keyframes stretchRight {
+	0% {
+		transform: scaleX(0.3);
+	}
+	40% {
+		transform: scaleX(1.02);
+	}
+	60% {
+		transform: scaleX(0.98);
+	}
+	80% {
+		transform: scaleX(1.01);
+	}
+	100% {
+		transform: scaleX(0.98);
+	}				
+	80% {
+		transform: scaleX(1.01);
+	}
+	100% {
+		transform: scaleX(1);
+	}							
 }
 
 /* Sección sobre mí */
