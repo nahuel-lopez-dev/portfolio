@@ -350,6 +350,8 @@ h1{
 /* Sección de Skills*/
 .cajaSkills{
   display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
   margin: 0 auto;
 }
 
@@ -361,7 +363,7 @@ h1{
   // background-color: $colorUno;
   // border-radius: 20%;
   padding: 6px;
-  margin: 1.5rem 0 0 2.5rem;
+  margin: 1.5rem 2.5rem 0 2.5rem;
 }
 
 .iconoSkillGit{
