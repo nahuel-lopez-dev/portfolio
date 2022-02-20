@@ -197,7 +197,7 @@ h1 {
 /* animaciones */
 .fadeIn {
   animation-name: fadeIn;
-  animation-duration: 2s;
+  animation-duration: 3s;
   animation-timing-function: ease-in-out;
   visibility: visible !important; }
 
@@ -216,7 +216,7 @@ h1 {
 
 .stretchRight {
   animation-name: stretchRight;
-  animation-duration: 2s;
+  animation-duration: 2.5s;
   animation-timing-function: ease-out;
   transform-origin: 0% 0%; }
 
