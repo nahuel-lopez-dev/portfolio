@@ -182,11 +182,15 @@ body {
   align-items: center;
   letter-spacing: 1px; }
 
-h1 {
+.tituloPrincipal {
   font-family: "Nunito", sans-serif;
-  font-size: 5rem;
+  font-size: 4.5rem;
   color: #212529;
+  margin-top: 3rem;
   text-align: start; }
+
+.presentacionInfoPrincipal {
+  font-size: 1.75rem; }
 
 .presentacion .foto .nombre {
   margin-bottom: 8px; }
@@ -393,12 +397,24 @@ h1 {
 
 /* media querys para una mejor adaptación */
 @media (max-width: 1200px) {
+  .tituloPrincipal {
+    font-size: 2.7rem;
+    margin-top: 5rem; }
+  .presentacionInfoPrincipal {
+    font-size: 1.25rem; }
   .proyecto {
     width: 40%; }
   .justBeNice {
     margin-bottom: 1.9rem; } }
 
 @media (max-width: 991.98px) {
+  .tituloPrincipal {
+    font-size: 2.4rem;
+    margin-top: 0rem; }
+  .presentacionInfoPrincipal {
+    font-size: 1.25rem; }
+  .imgFotoPerfil {
+    max-width: 23vw; }
   /*Para sacar la transformación de los items del menú*/
   .hoverMenu {
     transition: none; }
@@ -436,8 +452,14 @@ h1 {
     font-size: 6vw; } }
 
 @media (max-width: 768px) {
-  #portfolio {
-    font-size: 1.75rem; }
+  .presentacion {
+    margin: 0rem 1.5rem 0rem 1.5rem; }
+  .tituloPrincipal {
+    font-size: 2rem; }
+  .presentacionInfoPrincipal {
+    font-size: 1.25rem; }
+  .imgFotoPerfil {
+    max-width: 20vw; }
   .proyecto {
     width: 75%; }
   .imgFotoPerfil {
@@ -446,20 +468,28 @@ h1 {
     margin-bottom: 1.7rem; } }
 
 @media (max-width: 575.98px) {
-  #portfolio {
-    font-size: 1.25rem; }
+  .tituloPrincipal {
+    font-size: 1.5rem; }
+  .presentacionInfoPrincipal {
+    font-size: 1rem; }
   .imgFotoPerfil {
-    max-width: 50vw; }
+    max-width: 40vw; }
+  .iconoPresentacion {
+    height: 6vh; }
+  .nombreIcono {
+    font-size: 0.8rem; }
   .logo {
     padding-right: 3.5vw; }
   .gear {
     font-size: 5vh; }
   .justBeNice {
-    font-size: 10vh;
+    font-size: 7vh;
     padding-left: 0.5rem;
-    margin-bottom: 1.5rem; }
+    margin-top: 1rem; }
   .logo a p {
     font-size: 3vh; }
+  .resumen {
+    font-size: 1rem; }
   .proyecto {
     width: 85vw;
     height: auto; }
@@ -467,6 +497,9 @@ h1 {
     max-width: 85vw; }
   .logoFooter {
     font-size: 10vw; }
+  .info {
+    line-height: 25px;
+    margin: 10px 0px 10px 0px; }
   .desplazamiento {
     animation-name: desplazamiento;
     animation-duration: 1200ms;
