@@ -356,7 +356,22 @@ h1{
 .habilidades{
   margin-top: 1.5rem;
 	color: $colorTres;
-} 
+}
+
+.cajaHobbie{
+  display: flex;
+  flex-direction: column;
+  // align-items: center;
+}
+
+.iconoHobbie{
+  background-color: white;
+  height: 8vh;
+  margin: 0.5rem;
+  padding: 4px;
+  width: auto;
+  align-self: flex-start;
+}
 
 /* Sección de Skills*/
 .cajaSkills{
