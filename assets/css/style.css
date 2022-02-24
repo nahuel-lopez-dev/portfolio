@@ -46,6 +46,9 @@ body {
 #nav {
   background-color: #f8f9fa; }
 
+.nav-item a:hover {
+  text-decoration: underline; }
+
 .hoverMenu {
   transition: all 300ms; }
 
@@ -153,9 +156,6 @@ body {
 
 .trans:hover {
   transform: scale(1.1); }
-
-.nav-item a:hover {
-  text-decoration: underline; }
 
 .cajaIconosPresentacion {
   display: flex;

@@ -81,6 +81,9 @@ body {
 //id para el nav
 #nav{
   background-color: $colorContenedor;
+}
+.nav-item a:hover{
+  text-decoration: underline;
 }  
 //efecto hover en el menú, para agrandar los items
 .hoverMenu{
@@ -209,9 +212,6 @@ body {
 }
 .trans:hover {
   transform: scale(1.1);
-}
-.nav-item a:hover{
-  text-decoration: underline;
 }
 .cajaIconosPresentacion{
   display: flex;
