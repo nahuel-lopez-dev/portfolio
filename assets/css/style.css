@@ -78,7 +78,7 @@ body {
 /*animación para hacer girar un elemento*/
 .rodar {
   animation-name: rodar;
-  animation-duration: 2s;
+  animation-duration: 1.9s;
   animation-iteration-count: infinite;
   animation-timing-function: linear; }
 
@@ -160,7 +160,8 @@ body {
 .cajaIconosPresentacion {
   display: flex;
   flex-flow: row wrap;
-  justify-content: flex-start; }
+  justify-content: flex-start;
+  margin-top: 1.5rem; }
 
 .iconoPresentacion {
   height: 8vh;
@@ -325,11 +326,7 @@ body {
   text-align: center;
   border: 2px solid #ccc;
   border-radius: 5px;
-  box-shadow: 0px 0px 5px #ccc inset;
-  transition: 1s all; }
-
-.proyecto:hover {
-  opacity: 0.6; }
+  box-shadow: 0px 0px 5px #ccc inset; }
 
 .img {
   /*640 ancho x 426 alto*/
@@ -339,9 +336,8 @@ body {
   border-radius: 10px; }
 
 .info {
-  font-style: var(--fuenteDos);
-  line-height: 10px;
-  margin: 15px 0px 15px 0px; }
+  line-height: 15px;
+  margin: 8px 0px 8px 0px; }
 
 /*clases para la sección de contacto*/
 .cajaFormulario {
@@ -352,50 +348,49 @@ body {
 
 .btnColorUno {
   background-color: #0d055a;
-  font-family: "Nunito", sans-serif; }
+  color: white;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold; }
 
 .btnColorUno:hover {
-  background-color: #00538c; }
+  background-color: #00538c;
+  color: white; }
 
 .btnColorDos {
   background-color: #3c4146;
-  font-family: "Nunito", sans-serif; }
+  color: white;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold; }
 
 .btnColorDos:hover {
-  background-color: #a8a8a8; }
+  background-color: #a8a8a8;
+  color: white; }
 
 /* clases para el footer */
 #footer {
   max-width: 100vw;
-  height: 25vh;
-  background-color: #f8f9fa; }
-
-#footer .info {
-  text-align: center;
-  order: 2;
-  color: #a8a8a8; }
+  min-height: 20vh;
+  background-color: #f8f9fa;
+  text-align: center; }
 
 .logoFooter {
-  order: 1;
   text-decoration: none;
   color: #a8a8a8;
-  font-size: 4vw;
   font-family: "Nunito", sans-serif;
   font-style: italic;
   font-weight: bold;
   font-size: 4.5vw;
-  margin-right: 2vw;
+  text-align: center;
   text-shadow: 2px 2px 5px #484848; }
 
 .logoFooter:hover {
   color: #0d055a;
   text-shadow: 2px 2px 5px #0d055a; }
 
-.pie {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 2vh; }
+.footerInfo {
+  color: #a8a8a8;
+  line-height: 1.5rem;
+  margin: 8px 0px 8px 0px; }
 
 /* media querys para una mejor adaptación */
 @media (max-width: 1200px) {
@@ -501,8 +496,10 @@ body {
   .logoFooter {
     font-size: 10vw; }
   .info {
-    line-height: 25px;
+    line-height: 15px;
     margin: 10px 0px 10px 0px; }
+  footer h4 .info {
+    line-height: 30px; }
   .desplazamiento {
     animation-name: desplazamiento;
     animation-duration: 1200ms;
