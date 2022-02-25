@@ -190,7 +190,8 @@ body {
   text-align: start; }
 
 .presentacionInfoPrincipal {
-  font-size: 1.75rem; }
+  font-size: 1.75rem;
+  max-width: 65vw; }
 
 .presentacion .foto .nombre {
   margin-bottom: 8px; }
@@ -292,6 +293,7 @@ body {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  align-items: center;
   margin: 0 auto; }
 
 .iconoSkill {
@@ -412,7 +414,8 @@ body {
     font-size: 2.4rem;
     margin-top: 0rem; }
   .presentacionInfoPrincipal {
-    font-size: 1.25rem; }
+    font-size: 1.25rem;
+    max-width: 100vw; }
   .imgFotoPerfil {
     max-width: 23vw; }
   /*Para sacar la transformación de los items del menú*/
