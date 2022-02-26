@@ -336,7 +336,7 @@ body {
   border-radius: 10px; }
 
 .info {
-  line-height: 15px;
+  line-height: 25px;
   margin: 8px 0px 8px 0px; }
 
 /*clases para la sección de contacto*/
@@ -496,7 +496,7 @@ body {
   .logoFooter {
     font-size: 10vw; }
   .info {
-    line-height: 15px;
+    line-height: 20px;
     margin: 10px 0px 10px 0px; }
   footer h4 .info {
     line-height: 30px; }
