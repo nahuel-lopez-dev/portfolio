@@ -404,9 +404,9 @@ body {
   margin-left: 2rem;
 }
 
-/* Sección de los proyectos */
+/* Sección de la formación y los proyectos. Van a usar las mismas clases */
 //id para estructurar la organización de los proyectos en general
-#proyectos {
+.proyectos {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -484,15 +484,8 @@ body {
  background-color: $colorContenedor;
  text-align: center; 
 } 
-  
-// #footer .info {
-//   text-align: center;
-//   order: 2;
-//   color: $colorCinco; 
-// }
 
 .logoFooter{
-  // order: 1;
   text-decoration: none;
   color: $colorCinco;
   font-family: $fuenteUno;
@@ -507,13 +500,6 @@ body {
   color: $colorDos;
   text-shadow: 2px 2px 5px $colorDos; 
 }
-  
-// .pie{
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   padding: 2vh;
-// }
 
 .footerInfo{
   color: $colorCinco;
@@ -555,63 +541,49 @@ body {
   .hoverMenu{
     transition: none;
   }  
-  
   .hoverMenu:hover{
     transform: none;
   }
-
   .logo{
     padding-right: 3vw;
   }
-
   .gear{
     font-size: 7vh;
   }
-
   .justBeNice{
     font-size: 14vh;
     margin-left: 2vw;
     margin-bottom: 1.8rem;
   }  
-
   .logo a {
     font-size: 6vw;
   }
-
   .logo a p{
     font-size: 4vh;
   }
-
   .presentacion{
     display: flex;
     flex-direction: column;
     margin: 0 2rem 0 2rem;
   }
-
   .nombre{
     display: none;
   }
-
   .foto{
     order: 1
   }
-
   .presentacionInfo{
     order: 2;
   }
-  
   .resumen{
     font-size: 1.25rem;
   }
-
   .proyecto{
     width: 45%;
-  }
-    
+  } 
   .cajaFormulario {
     max-width: 75vw;
-  }
-    
+  } 
   .logoFooter{
     font-size: 6vw;
   }  
@@ -630,9 +602,6 @@ body {
   .imgFotoPerfil{
     max-width: 20vw;
   }
-  // #portfolio{
-  //   font-size: 1.75rem;
-  // }
   .proyecto{
     width: 75%;
   }

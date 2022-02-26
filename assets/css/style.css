@@ -309,8 +309,8 @@ body {
 .formacionTexto {
   margin-left: 2rem; }
 
-/* Sección de los proyectos */
-#proyectos {
+/* Sección de la formación y los proyectos. Van a usar las mismas clases */
+.proyectos {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
