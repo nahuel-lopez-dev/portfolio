@@ -349,7 +349,8 @@ body {
   background-color: #0d055a;
   color: white;
   font-family: "Nunito", sans-serif;
-  font-weight: bold; }
+  font-weight: bold;
+  margin: 0px 12px 12px 12px; }
 
 .btnColorUno:hover {
   background-color: #00538c;
@@ -359,7 +360,8 @@ body {
   background-color: #3c4146;
   color: white;
   font-family: "Nunito", sans-serif;
-  font-weight: bold; }
+  font-weight: bold;
+  margin: 0px 12px 12px 12px; }
 
 .btnColorDos:hover {
   background-color: #a8a8a8;
