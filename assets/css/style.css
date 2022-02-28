@@ -294,7 +294,6 @@ body {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  align-items: center;
   margin: 0 auto; }
 
 .iconoSkill {
@@ -488,6 +487,8 @@ body {
     font-size: 3vh; }
   .resumen {
     font-size: 1rem; }
+  .sobreMiTexto {
+    margin-left: 1.5rem; }
   .proyecto {
     width: 85vw;
     height: auto; }

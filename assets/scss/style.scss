@@ -386,7 +386,6 @@ body {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  align-items: center;
   margin: 0 auto;
 }
 
@@ -398,6 +397,10 @@ body {
   padding: 6px;
   margin: 1.5rem 2.5rem 0 2.5rem;
 }
+
+// .git{
+//   color: #e84d31;
+// }
 
 /* Sección de formación */
 .formacionTexto{
@@ -645,6 +648,9 @@ body {
   }
   .resumen{
     font-size: 1rem;
+  }
+  .sobreMiTexto{
+    margin-left: 1.5rem;
   }
   .proyecto {
     width: 85vw;
