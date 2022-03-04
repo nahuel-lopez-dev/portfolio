@@ -75,7 +75,7 @@ body {
 }
 //clase para contener elementos al 90% de la pantalla
 .contenedor{
-  max-width: 95%;
+  max-width: 80%;
 }
 /* clases para el header */
 //id para el nav
@@ -240,7 +240,7 @@ body {
 .presentacion{
   color: $colorSiete;
   display: flex;
-  margin: 0 0 0 5rem;
+  // margin: 0 0 0 5rem;
   align-items: center;
   letter-spacing: 1px;
 }
@@ -249,8 +249,7 @@ body {
   font-family: $fuenteUno;
   font-size: 4.5rem;
   color: $colorUno;
-  margin-top: 3rem;
-  text-align: start; 
+  margin-top: 3rem; 
 }
 //clase para el texto de presentación
 .presentacionInfoPrincipal{
@@ -514,6 +513,9 @@ body {
 /* media querys para una mejor adaptación */
 //media query específica  
 @media(max-width: 1200px){
+  .presentacion{
+    justify-content: center;
+  }
   .tituloPrincipal{
     font-size: 2.7rem;
     margin-top: 5rem;
@@ -651,9 +653,13 @@ body {
   }
   .resumen{
     font-size: 1rem;
+    margin: 0rem 1.5rem 0rem 1.5rem;
   }
-  .sobreMiTexto{
-    margin-left: 1.5rem;
+  .iconoHobbie{
+    margin: 0rem 1.5rem 0rem 1.5rem;
+  }
+  .habilidades{
+    margin: 1rem 1.5rem 1rem 1.5rem;
   }
   .proyecto {
     width: 85vw;
