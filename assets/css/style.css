@@ -152,7 +152,7 @@ body {
 
 /*Transición para agrandar los items*/
 .trans {
-  transition: 1s all; }
+  transition: all 1s; }
 
 .trans:hover {
   transform: scale(1.1); }
@@ -168,7 +168,11 @@ body {
   width: auto;
   background-color: #212529;
   border-radius: 50%;
-  padding: 4px; }
+  padding: 4px;
+  transition: all 300ms; }
+
+.iconoPresentacion:hover {
+  opacity: 0.6; }
 
 .nombreIcono {
   text-align: center;
@@ -209,25 +213,6 @@ body {
   font-size: 1rem; }
 
 /* animaciones */
-.fadeIn {
-  animation-name: fadeIn;
-  animation-duration: 3s;
-  animation-timing-function: ease-in-out;
-  visibility: visible !important; }
-
-@keyframes fadeIn {
-  0% {
-    transform: scale(0);
-    opacity: 0.0; }
-  60% {
-    transform: scale(1.1); }
-  80% {
-    transform: scale(0.9);
-    opacity: 1; }
-  100% {
-    transform: scale(1);
-    opacity: 1; } }
-
 .stretchRight {
   animation-name: stretchRight;
   animation-duration: 2.5s;
@@ -266,7 +251,7 @@ body {
 
 .sobreMi {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: start; }
 
 .sobreMiTexto {
@@ -296,7 +281,6 @@ body {
   margin: 0 auto; }
 
 .iconoSkill {
-  border-radius: 20%;
   height: 8vh;
   width: auto;
   padding: 6px;

@@ -208,7 +208,7 @@ body {
 }
 /*Transición para agrandar los items*/
 .trans {
-  transition: 1s all;
+  transition: all 1s;
 }
 .trans:hover {
   transform: scale(1.1);
@@ -225,7 +225,11 @@ body {
   width: auto;
   background-color: $colorUno;
   border-radius: 50%;
-  padding: 4px; 
+  padding: 4px;
+  transition: all 300ms; 
+ }
+ .iconoPresentacion:hover{
+   opacity: 0.6;
  }
 //para darle formato a los nombres de los iconos de la presentación y skills
 .nombreIcono{
@@ -280,29 +284,29 @@ body {
 }
 /* animaciones */
 //animación para la foto
-.fadeIn{
-	animation-name: fadeIn;	
-	animation-duration: 3s;	
-	animation-timing-function: ease-in-out;			
-	visibility: visible !important;	
-}
-@keyframes fadeIn {
-	0% {
-		transform: scale(0);
-		opacity: 0.0;		
-	}
-	60% {
-		transform: scale(1.1);	
-	}
-	80% {
-		transform: scale(0.9);
-		opacity: 1;	
-	}	
-	100% {
-		transform: scale(1);
-		opacity: 1;	
-	}		
-}
+// .fadeIn{
+// 	animation-name: fadeIn;	
+// 	animation-duration: 3s;	
+// 	animation-timing-function: ease-in-out;			
+// 	visibility: visible !important;	
+// }
+// @keyframes fadeIn {
+// 	0% {
+// 		transform: scale(0);
+// 		opacity: 0.0;		
+// 	}
+// 	60% {
+// 		transform: scale(1.1);	
+// 	}
+// 	80% {
+// 		transform: scale(0.9);
+// 		opacity: 1;	
+// 	}	
+// 	100% {
+// 		transform: scale(1);
+// 		opacity: 1;	
+// 	}		
+// }
 //animación para los textos
 .stretchRight{
 	animation-name: stretchRight;	
@@ -353,7 +357,7 @@ body {
 
 .sobreMi{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: start;
 }
 
@@ -391,7 +395,7 @@ body {
 
 .iconoSkill{
   // background-color: $colorCuatro;
-  border-radius: 20%;
+  // border-radius: 20%;
   height: 8vh;
   width: auto;
   padding: 6px;
