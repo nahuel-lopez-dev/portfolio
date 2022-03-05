@@ -361,12 +361,8 @@ body {
   justify-content: start;
 }
 
-.sobreMiTexto{
-  margin-left: 2rem;
-}
-
-.habilidades{
-  margin-top: 1.5rem;
+.subtitulo{
+  margin-top: 0.5rem;
 	color: $colorTres;
 }
 
@@ -671,7 +667,7 @@ body {
   .iconoHobbie{
     margin: 0rem 1.5rem 0rem 1.5rem;
   }
-  .habilidades{
+  .subtitulo{
     margin: 1rem 1.5rem 1rem 1.5rem;
   }
   .proyecto {

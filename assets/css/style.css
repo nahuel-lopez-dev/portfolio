@@ -254,11 +254,8 @@ body {
   flex-direction: column;
   justify-content: start; }
 
-.sobreMiTexto {
-  margin-left: 2rem; }
-
-.habilidades {
-  margin-top: 1.5rem;
+.subtitulo {
+  margin-top: 0.5rem;
   color: #00538c; }
 
 .cajaHobbie {
@@ -483,7 +480,7 @@ body {
     margin: 0rem 1.5rem 0rem 1.5rem; }
   .iconoHobbie {
     margin: 0rem 1.5rem 0rem 1.5rem; }
-  .habilidades {
+  .subtitulo {
     margin: 1rem 1.5rem 1rem 1.5rem; }
   .proyecto {
     width: 85vw;
