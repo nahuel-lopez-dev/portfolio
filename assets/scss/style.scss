@@ -231,6 +231,7 @@ body {
 .nombreIcono{
   text-align: center;
   color: $colorUno;
+  font-size: 1.1rem;
   // margin-left: 2.5rem;
 } 
 /* fin de animaciones, etiquetas, clases e id para el header*/
@@ -247,13 +248,13 @@ body {
 //clase para el h1
 .tituloPrincipal{
   font-family: $fuenteUno;
-  font-size: 4.5rem;
+  font-size: 4rem;
   color: $colorUno;
   margin-top: 3rem; 
 }
 //clase para el texto de presentación
 .presentacionInfoPrincipal{
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   max-width: 65vw;
 }
 
@@ -271,7 +272,7 @@ body {
 }
 //clase exclusiva para manejar la foto de perfil
 .imgFotoPerfil{
-  max-width: 25vw;
+  max-width: 23vw;
 }
 //clase para manejar la información debajo de la foto
 .nombre{
@@ -542,6 +543,8 @@ body {
   }
   .imgFotoPerfil{
     max-width: 23vw;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
   }
   /*Para sacar la transformación de los items del menú*/
   .hoverMenu{
@@ -580,6 +583,12 @@ body {
   }
   .presentacionInfo{
     order: 2;
+  }
+  .cajaIconosPresentacion{
+    margin-top: 0.5rem;
+  }
+  .iconoPresentacion{
+    height: 6vh;
   }
   .resumen{
     font-size: 1.25rem;

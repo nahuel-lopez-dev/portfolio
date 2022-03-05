@@ -172,7 +172,8 @@ body {
 
 .nombreIcono {
   text-align: center;
-  color: #212529; }
+  color: #212529;
+  font-size: 1.1rem; }
 
 /* fin de animaciones, etiquetas, clases e id para el header*/
 /* Sección de presentación */
@@ -184,12 +185,12 @@ body {
 
 .tituloPrincipal {
   font-family: "Nunito", sans-serif;
-  font-size: 4.5rem;
+  font-size: 4rem;
   color: #212529;
   margin-top: 3rem; }
 
 .presentacionInfoPrincipal {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   max-width: 65vw; }
 
 .presentacion .foto .nombre {
@@ -202,7 +203,7 @@ body {
   order: 2; }
 
 .imgFotoPerfil {
-  max-width: 25vw; }
+  max-width: 23vw; }
 
 .nombre {
   font-size: 1rem; }
@@ -412,7 +413,9 @@ body {
     font-size: 1.25rem;
     max-width: 100vw; }
   .imgFotoPerfil {
-    max-width: 23vw; }
+    max-width: 23vw;
+    margin-top: 0rem;
+    margin-bottom: 0rem; }
   /*Para sacar la transformación de los items del menú*/
   .hoverMenu {
     transition: none; }
@@ -440,6 +443,10 @@ body {
     order: 1; }
   .presentacionInfo {
     order: 2; }
+  .cajaIconosPresentacion {
+    margin-top: 0.5rem; }
+  .iconoPresentacion {
+    height: 6vh; }
   .resumen {
     font-size: 1.25rem; }
   .proyecto {
