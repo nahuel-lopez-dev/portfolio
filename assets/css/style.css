@@ -369,7 +369,8 @@ body {
 .footerInfo {
   color: #a8a8a8;
   line-height: 1.5rem;
-  margin: 8px 0px 8px 0px; }
+  margin: 8px 0px 8px 0px;
+  padding-bottom: 1rem; }
 
 /* media querys para una mejor adaptación */
 @media (max-width: 1200px) {
@@ -383,7 +384,9 @@ body {
   .proyecto {
     width: 40%; }
   .justBeNice {
-    margin-bottom: 1.9rem; } }
+    margin-bottom: 1.9rem; }
+  #footer {
+    min-height: 18vh; } }
 
 @media (max-width: 991.98px) {
   .tituloPrincipal {
@@ -434,7 +437,9 @@ body {
   .cajaFormulario {
     max-width: 75vw; }
   .logoFooter {
-    font-size: 6vw; } }
+    font-size: 6vw; }
+  .footerInfo {
+    padding-bottom: 0.5rem; } }
 
 @media (max-width: 768px) {
   .presentacion {

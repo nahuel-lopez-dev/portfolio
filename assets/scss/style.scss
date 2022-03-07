@@ -508,7 +508,8 @@ body {
 .footerInfo{
   color: $colorCinco;
   line-height: 1.5rem;
-  margin: 8px 0px 8px 0px;    
+  margin: 8px 0px 8px 0px;
+  padding-bottom: 1rem;    
 }
 
 /* media querys para una mejor adaptación */
@@ -529,6 +530,9 @@ body {
   }
   .justBeNice{
     margin-bottom: 1.9rem;
+  }
+  #footer{
+    min-height: 18vh;
   }
 }  
 //media query para tablets
@@ -601,6 +605,9 @@ body {
   } 
   .logoFooter{
     font-size: 6vw;
+  }
+  .footerInfo{
+    padding-bottom: 0.5rem;
   }  
 }
 //media query para dispositivos entre tablets y mobile
