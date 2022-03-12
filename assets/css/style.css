@@ -324,25 +324,25 @@ body {
   max-width: 50vw; }
 
 .btnColorUno {
-  background-color: #0d055a;
+  background-color: #00538c;
   color: white;
   font-family: "Nunito", sans-serif;
   font-weight: bold;
   margin: 0px 12px 12px 12px; }
 
 .btnColorUno:hover {
-  background-color: #00538c;
+  background-color: #0d055a;
   color: white; }
 
 .btnColorDos {
-  background-color: #3c4146;
+  background-color: #a8a8a8;
   color: white;
   font-family: "Nunito", sans-serif;
   font-weight: bold;
   margin: 0px 12px 12px 12px; }
 
 .btnColorDos:hover {
-  background-color: #a8a8a8;
+  background-color: #3c4146;
   color: white; }
 
 /* clases para el footer */

@@ -455,7 +455,7 @@ body {
 }
 //botón de enviar
 .btnColorUno{
-    background-color: $colorDos;
+    background-color: $colorTres;
     color: white;
     font-family: $fuenteUno;
     font-weight: bold;
@@ -463,12 +463,12 @@ body {
 }
 //hover en botón de enviar
 .btnColorUno:hover{
-    background-color: $colorTres;
+    background-color: $colorDos;
     color:white;
 }
 //botón de resetear
 .btnColorDos{
-    background-color: $colorSiete;
+    background-color: $colorCinco;
     color: white;
     font-family: $fuenteUno;
     font-weight: bold;
@@ -476,7 +476,7 @@ body {
 }
 //hover en el botón de resetear
 .btnColorDos:hover{
-    background-color: $colorCinco;
+    background-color: $colorSiete;
     color: white;
 }
 
