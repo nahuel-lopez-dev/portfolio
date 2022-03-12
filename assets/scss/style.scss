@@ -484,7 +484,7 @@ body {
 //id para darle estructura al footer
 #footer {
  max-width: 100vw;
- min-height: 20vh;
+ min-height: 22vh;
  background-color: $colorContenedor;
  text-align: center; 
 } 
@@ -509,7 +509,7 @@ body {
   color: $colorCinco;
   line-height: 1.5rem;
   margin: 8px 0px 8px 0px;
-  padding-bottom: 1rem;    
+  // padding-bottom: 0.5rem;    
 }
 
 /* media querys para una mejor adaptación */

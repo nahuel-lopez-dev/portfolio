@@ -348,7 +348,7 @@ body {
 /* clases para el footer */
 #footer {
   max-width: 100vw;
-  min-height: 20vh;
+  min-height: 22vh;
   background-color: #f8f9fa;
   text-align: center; }
 
@@ -369,8 +369,7 @@ body {
 .footerInfo {
   color: #a8a8a8;
   line-height: 1.5rem;
-  margin: 8px 0px 8px 0px;
-  padding-bottom: 1rem; }
+  margin: 8px 0px 8px 0px; }
 
 /* media querys para una mejor adaptación */
 @media (max-width: 1200px) {
