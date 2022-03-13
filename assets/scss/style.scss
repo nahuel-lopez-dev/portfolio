@@ -8,6 +8,7 @@
   }    
 
 /***** Variables globales en SASS *****/
+
 /** Variables de colores personalizados **/
 $colorGrisFuerte: #3c4146; //sombras y titulos
 $colorGrisClarito: #ccc; //sombras y titulos
@@ -30,25 +31,28 @@ $colorDanger: #dc3545;
 $colorPrimary: #0d6efd;
 $colorSecondary: #6c757d;
 
-/** Variables de colores a usar para mi proyecto**/
-/*Color de Portfolio header y h1 con frase*/
+/** Variables de colores a usar para el portafolio**/
+/*Color del h1 y textos en general*/
 $colorUno: #212529;
-/* color del simbolo 1, sombra del simbolo 2 y botón enviar*/
+/*color del simbolo 1, simbolo 2 y hover de los botones ver demo y enviar*/
 $colorDos: rgb(13, 5, 90);
-/* color de titulos, hover enviar y hover Portfolio */
+/*color de titulo de secciones y de botones ver demo y enviar*/
 $colorTres: #00538c;
 /*Colores de sombras*/
 $colorCuatro: #ccc;
+/*color de sombra del form y de los botones ver código y borrar*/
 $colorCinco: #a8a8a8;
+/*color de hover del logo*/
 $colorSeis: #484848;
+/*color de hover de los botones ver código y borrar*/
 $colorSiete: #3c4146;
-/*Color los background del header, titulos y footer*/
+/*Color para los background del header, titulos y footer*/
 $colorContenedor: #f8f9fa;
 /** Variables de fuentes de letras **/
 $fuenteUno: "Nunito", sans-serif;
-$fuenteDos: "TrebuchetMS", sans-serif;
-$fuenteTres: "BebasNeue";
-$fuenteCuatro: "WebSymbolsRegular";  
+$fuenteDos: "WebSymbolsRegular";  
+$fuenteTres: "TrebuchetMS", sans-serif;
+$fuenteCuatro: "BebasNeue";
 
 /** Fuentes **/
 @font-face {
@@ -69,28 +73,23 @@ $fuenteCuatro: "WebSymbolsRegular";
   font-weight: normal;
   font-style: normal; }  
 
-//para que todas las letras en general tengan por defecto fuente 'Opens Sans'  
+/*para que todas las letras en general tengan por defecto fuente 'Opens Sans'*/  
 body {
   font-family: 'Open Sans', sans-serif;
 }
-//clase para contener elementos al 90% de la pantalla
-.contenedor{
-  max-width: 80%;
-}
+
 /* clases para el header */
 //id para el nav
 #nav{
   background-color: $colorContenedor;
-}
-.nav-item a:hover{
-  text-decoration: underline;
-}  
+} 
 //efecto hover en el menú, para agrandar los items
-.hoverMenu{
+.menu{
   transition: all 300ms;
 }  
-.hoverMenu:hover{
+.menu:hover{
   transform: scale(1.15, 1.15);
+  text-decoration: underline;
 }
 //clases para el logo: la rueda, 'Portfolio', y el emblema 'Just be nice'
 .logo {
@@ -103,18 +102,17 @@ body {
 }
 .logo:hover{
   color: $colorSeis;
-  border-radius: 5px;
   overflow: hidden;
 }
 //Usando webSymbolsRegular => S = rueda
 .gear{
-  font-family: "webSymbolsRegular";
+  font-family: $fuenteDos;
   margin: 0 1vw 0 0;
   font-size: 5vh;
   // color: $colorDos;
   text-shadow: 0px 0px 3px $colorCuatro;
-  }
-/* animaciones */
+}
+/***** animaciones *****/
 /*animación para hacer girar un elemento*/
 .rodar{
   animation-name: rodar;
@@ -130,7 +128,7 @@ body {
     transform: rotateZ(360deg);
   }
 }
-//animación para hacer un elemento y que genere el efecto de desaparecer  
+/*animación para hacer un elemento y que genere el efecto de desaparecer*/  
 .logo:hover .gear{
   animation: cae 500ms linear;
 }
@@ -169,13 +167,13 @@ body {
 }
 //clase para el emblema 'just be nice'  
 .justBeNice{
-  font-family: "webSymbolsRegular";
+  font-family: $fuenteDos;
   font-size: 12vh;
   margin-left: 2vw;
   margin-bottom: 1.9rem;
   font-weight: bold;
   font-style: italic;
-  text-shadow: 7px 7px 15px $colorSecondary; 
+  text-shadow: 8px 5px 7px $colorCinco; 
 }
 //animación para que algo venga con desplazamiento
 .desplazamiento{
@@ -245,7 +243,6 @@ body {
 .presentacion{
   color: $colorSiete;
   display: flex;
-  // margin: 0 0 0 5rem;
   align-items: center;
   letter-spacing: 1px;
 }
@@ -373,7 +370,6 @@ body {
 }
 
 .iconoHobbie{
-  // background-color: $colorContenedor;
   height: 8vh;
   margin: 0.5rem;
   padding: 4px;
@@ -390,24 +386,14 @@ body {
 }
 
 .iconoSkill{
-  // background-color: $colorCuatro;
-  // border-radius: 20%;
   height: 8vh;
   width: auto;
   padding: 6px;
   margin: 1.5rem 2.5rem 0 2.5rem;
 }
 
-// .git{
-//   color: #e84d31;
-// }
-
-/* Sección de formación */
-.formacionTexto{
-  margin-left: 2rem;
-}
-
-/* Sección de la formación y los proyectos. Van a usar las mismas clases */
+/* Sección de formación y los proyectos */
+/* Van a usar las mismas clases */
 //id para estructurar la organización de los proyectos en general
 .proyectos {
   display: flex;
