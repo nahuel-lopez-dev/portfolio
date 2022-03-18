@@ -466,6 +466,23 @@ body {
     color: white;
 }
 
+#spinner {
+  display: none;
+  justify-content: center;
+}
+
+.mensajeExitoso{
+  // bg-primary', 'text-white', 'text-center', 'mt-2', 'p-2', 'fs-3
+  color: white;
+  font-family: $fuenteUno;
+  font-weight: bold;
+  font-size: 1rem;
+  background-color: $colorTres;
+  margin-top: 1rem;
+  padding: 1rem;
+  text-align: center;
+}
+
 /* clases para el footer */
 //id para darle estructura al footer
 #footer {

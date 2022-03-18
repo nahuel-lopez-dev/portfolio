@@ -489,12 +489,12 @@
         <section>
             <h2 id="contact" class="titulo fs-1 mt-5">Contact</h2>
             <!-- <h3 class="text-center text-dark">My email: nahuel.developer1@gmail.com</h3> -->
-            <form class="container cajaFormulario bg-light mt-5 mb-5">
+            <form id="enviar-email" class="container cajaFormulario bg-light mt-5 mb-5">
                 <div class="row">
                     <div class="form-group col-md-6">
-                        <label for="first_name"></label>
-                        <input id="first_name" name="first_name" type="text" class="form-control"
-                            placeholder="Tu nombre o empresa" required maxlength="50">
+                        <label for="nombre"></label>
+                        <input id="nombre" name="name" type="text" class="form-control"
+                            placeholder="Tu nombre o empresa" required maxlength="50" title="Este campo no puede estar vacío, ni tener más de 50 caracteres">
                     </div>
                     <div class="form-group col-md-6 mb-3">
                         <label for="email"></label>
@@ -503,12 +503,12 @@
                 </div>
                 <div class="form-group col-md-12 mb-3">
                     <label for="asunto"></label>
-                    <input id="asunto" type="text" class="form-control" placeholder="Asunto" required maxlength="50">
+                    <input id="asunto" type="text" class="form-control" placeholder="Asunto" required maxlength="50" title="Este campo no puede estar vacío, ni tener más de 50 caracteres">
                 </div>
                 <div class="col-md-12 text-white">
-                    <label for="textAreaFormulario" class="form-label m-2 text-body fs-5">Escribe tu
+                    <label for="mensaje" class="form-label m-2 text-body fs-5">Escribe tu
                         mensaje aquí:</label>
-                    <textarea class="form-control" id="textAreaForm" rows="5" required maxlength="300"></textarea>
+                    <textarea class="form-control" id="mensaje" rows="5" required maxlength="300" title="Este campo no puede estar vacío, ni tener más de 300 caracteres"></textarea>
                 </div>
                 <!-- <div class="col-12 m-2 mt-3">
                     <div class="form-check text-white">
@@ -518,10 +518,21 @@
                         </label>
                     </div>
                 </div> -->
-                <div class="form-group text-center">
-                    <label></label>
-                    <input type="submit" class="btn btn-lg btnColorUno m-3 bg-gradient" value="Enviar">
-                    <input type="reset" class="btn btn-lg btnColorDos m-3 bg-gradient" value="Borrar">
+                <div id="mensaje-enviado"></div>
+
+                <div id="spinner">
+                    <div class="d-flex mt-1 mb-1 p-2">
+                        <div class="spinner-border text-primary" role="status">
+                          <span class="visually-hidden">Loading...</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="botonesFormulario" class="form-group text-center">
+                    <button id="enviar" type="submit" class="btn btn-lg btnColorUno m-3 bg-gradient">Enviar</button>
+                    <button id="resetBtn" type="reset" class="btn btn-lg btnColorDos m-3 bg-gradient">Borrar</button>
+                    <!-- <input id="enviar" type="submit" class="btn btn-lg btnColorUno m-3 bg-gradient" value="Enviar"> -->
+                    <!-- <input type="reset" class="btn btn-lg btnColorDos m-3 bg-gradient" value="Borrar"> -->
                 </div>
             </form>
         </section>
@@ -545,7 +556,7 @@
     <!-- Acá termina el pie de página -->
 
     <!-- Enlace a JavaScript local -->
-    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/index.js"></script>
     <!-- Enlace a JavaScript de bootstrap local -->
     <script src="./assets/bootstrap/js/bootstrap.js"></script>
 </body>
