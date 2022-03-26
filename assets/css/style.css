@@ -11,13 +11,14 @@
 /** Variables de colores personalizados **/
 /*Variables de colores de Bootstrap*/
 /** Variables de colores a usar para el portafolio**/
-/*Color del h1 y textos en general*/
-/*color del simbolo 1, simbolo 2 y hover de los botones ver demo y enviar*/
-/*color de titulo de secciones y de botones ver demo y enviar*/
+/*Color del h1, subtitulos, textos en general y del botón uno*/
+/*color del logo (simbolo de la rueda y nombre), titulo de secciones y logo portafolio del footer */
+/*color de hover del logo, menú del navbar, y logo Portafolio del footer*/
+/*color de texto de la presentación*/
 /*Colores de sombras*/
-/*color de sombra del form y de los botones ver código y borrar*/
-/*color de hover del logo*/
-/*color de hover de los botones ver código y borrar*/
+/*Color de botón uno*/
+/*Color de botón dos*/
+/*hover botón Dos*/
 /*Color para los background del header, titulos y footer*/
 /** Variables de fuentes de letras **/
 /** Fuentes **/
@@ -45,26 +46,28 @@ body {
 
 /* clases para el header */
 #nav {
-  background-color: #f8f9fa;
+  background-color: black;
   min-height: 15vh; }
 
-.menu {
-  transition: all 300ms; }
+#menu {
+  transition: all 300ms;
+  color: #a8a8a8; }
 
-.menu:hover {
+#menu:hover {
   transform: scale(1.15, 1.15);
-  text-decoration: underline; }
+  text-decoration: underline;
+  color: #f8f9fa; }
 
 .logo {
   display: flex;
   align-items: center;
   margin-left: 3vw;
-  color: #0d055a;
+  color: #a8a8a8;
   padding-left: 1vw;
   padding-right: 2vw; }
 
 .logo:hover {
-  color: #484848;
+  color: #f8f9fa;
   overflow: hidden; }
 
 .gear {
@@ -101,16 +104,15 @@ body {
 
 .logo a {
   text-decoration: none;
-  color: #0d055a;
+  color: #a8a8a8;
   font-family: "Nunito", sans-serif;
   font-style: italic;
-  font-weight: bold;
-  font-size: 3.5vh;
-  text-shadow: 2px 2px 5px #ccc; }
+  font-weight: bolder;
+  font-size: 3.5vh; }
 
 .logo:hover a {
   animation: fromRight 300ms linear;
-  color: #484848; }
+  color: #f8f9fa; }
 
 @keyframes fromRight {
   from {
@@ -232,8 +234,8 @@ body {
   font-style: italic;
   text-align: center;
   margin: 20px 0px 20px 0px;
-  background-color: #f8f9fa;
-  color: #00538c;
+  background-color: black;
+  color: #a8a8a8;
   padding: 1rem; }
 
 .resumen {
@@ -247,7 +249,7 @@ body {
 
 .subtitulo {
   margin-top: 0.5rem;
-  color: #00538c; }
+  color: #212529; }
 
 .cajaHobbie {
   display: flex;
@@ -308,41 +310,41 @@ body {
 .cajaFormulario {
   margin-bottom: 2rem;
   border-radius: 10px;
-  box-shadow: 5px 5px 15px 10px #a8a8a8;
+  box-shadow: 5px 5px 10px 5px #ccc;
   max-width: 50vw; }
 
 .btnColorUno {
-  background-color: #00538c;
-  color: white;
+  background-color: #212529;
+  color: #f8f9fa;
   font-family: "Nunito", sans-serif;
   font-weight: bold;
   margin: 0px 12px 12px 12px; }
 
 .btnColorUno:hover {
-  background-color: #0d055a;
-  color: white; }
+  background-color: black;
+  color: #f8f9fa; }
 
 .btnColorDos {
-  background-color: #a8a8a8;
-  color: white;
+  background-color: #00538c;
+  color: #f8f9fa;
   font-family: "Nunito", sans-serif;
   font-weight: bold;
   margin: 0px 12px 12px 12px; }
 
 .btnColorDos:hover {
-  background-color: #3c4146;
-  color: white; }
+  background-color: #00395f;
+  color: #f8f9fa; }
 
 #spinner {
   display: none;
   justify-content: center; }
 
 .mensajeExitoso {
-  color: white;
+  color: #f8f9fa;
   font-family: "Nunito", sans-serif;
   font-weight: bold;
   font-size: 1rem;
-  background-color: #00538c;
+  background-color: #212529;
   margin-top: 1rem;
   padding: 1rem;
   text-align: center; }
@@ -351,7 +353,7 @@ body {
 #footer {
   max-width: 100vw;
   min-height: 22vh;
-  background-color: #f8f9fa;
+  background-color: black;
   text-align: center; }
 
 .logoFooter {
@@ -361,12 +363,11 @@ body {
   font-style: italic;
   font-weight: bold;
   font-size: 4.5vw;
-  text-align: center;
-  text-shadow: 2px 2px 5px #484848; }
+  text-align: center; }
 
 .logoFooter:hover {
-  color: #0d055a;
-  text-shadow: 2px 2px 5px #0d055a; }
+  color: #f8f9fa;
+  text-shadow: 2px 2px 5px #a8a8a8; }
 
 .footerInfo {
   color: #a8a8a8;

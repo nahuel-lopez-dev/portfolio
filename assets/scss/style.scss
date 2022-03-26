@@ -32,23 +32,26 @@ $colorPrimary: #0d6efd;
 $colorSecondary: #6c757d;
 
 /** Variables de colores a usar para el portafolio**/
-/*Color del h1 y textos en general*/
+/*Color del h1, subtitulos, textos en general y del botón uno*/
 $colorUno: #212529;
-/*color del simbolo 1, simbolo 2 y hover de los botones ver demo y enviar*/
-$colorDos: rgb(13, 5, 90);
-/*color de titulo de secciones y de botones ver demo y enviar*/
-$colorTres: #00538c;
+/*color del logo (simbolo de la rueda y nombre), titulo de secciones y logo portafolio del footer */
+$colorDos: #a8a8a8;
+/*color de hover del logo, menú del navbar, y logo Portafolio del footer*/
+$colorTres: #f8f9fa;
+/*color de texto de la presentación*/
+$colorCuatro: #3c4146;
 /*Colores de sombras*/
-$colorCuatro: #ccc;
-/*color de sombra del form y de los botones ver código y borrar*/
-$colorCinco: #a8a8a8;
-/*color de hover del logo*/
-$colorSeis: #484848;
-/*color de hover de los botones ver código y borrar*/
-$colorSiete: #3c4146;
+$colorSombra: #ccc;
+/*Color de botón uno*/
+
+/*Color de botón dos*/
+// $BotonDos: #dc3545;
+$BotonDos: #00538c;
+/*hover botón Dos*/
+// $HoverBotonDos: #e60e23;
+$HoverBotonDos: #00395f;
 /*Color para los background del header, titulos y footer*/
-$colorContenedor: #f8f9fa;
-// $colorContenedor: black;
+$colorContenedor: black;
 /** Variables de fuentes de letras **/
 $fuenteUno: "Nunito", sans-serif;
 $fuenteDos: "WebSymbolsRegular";  
@@ -84,14 +87,16 @@ body {
 #nav{
   background-color: $colorContenedor;
   min-height: 15vh;
-} 
-//efecto hover en el menú, para agrandar los items
-.menu{
+}
+#menu{
   transition: all 300ms;
+  color: $colorDos;
 }  
-.menu:hover{
+//efecto hover en el menú, para agrandar los items
+#menu:hover{
   transform: scale(1.15, 1.15);
   text-decoration: underline;
+  color: #f8f9fa;
 }
 //clases para el logo: la rueda, 'Portfolio', y el emblema 'Just be nice'
 .logo {
@@ -103,7 +108,7 @@ body {
   padding-right: 2vw;
 }
 .logo:hover{
-  color: $colorSeis;
+  color: #f8f9fa;
   overflow: hidden;
 }
 //Usando webSymbolsRegular => S = rueda
@@ -112,7 +117,7 @@ body {
   margin: 0 1vw 0 0;
   font-size: 5vh;
   // color: $colorDos;
-  text-shadow: 0px 0px 3px $colorCuatro;
+  text-shadow: 0px 0px 3px $colorSombra;
 }
 /***** animaciones *****/
 /*animación para hacer girar un elemento*/
@@ -151,13 +156,14 @@ body {
   color: $colorDos;
   font-family: $fuenteUno;
   font-style: italic;
-  font-weight: bold;
+  font-weight: bolder;
   font-size: 3.5vh;
-  text-shadow: 2px 2px 5px $colorCuatro; }
+  // text-shadow: 2px 2px 5px $colorCuatro; 
+}
 //efecto hover para el logo y a con animación  
 .logo:hover a{
   animation: fromRight 300ms linear;
-  color: $colorSeis;
+  color: #f8f9fa;
 }  
 @keyframes fromRight{
   from{
@@ -243,7 +249,7 @@ body {
 /* Sección de presentación */
 //acercaDe = presentación
 .presentacion{
-  color: $colorSiete;
+  color: $colorCuatro;
   display: flex;
   align-items: center;
   letter-spacing: 1px;
@@ -346,7 +352,7 @@ body {
   text-align: center;
   margin: 20px 0px 20px 0px;
   background-color: $colorContenedor;
-  color: $colorTres;
+  color: $colorDos;
   padding: 1rem;
 }
 .resumen{
@@ -362,7 +368,7 @@ body {
 
 .subtitulo{
   margin-top: 0.5rem;
-	color: $colorTres;
+	color: $colorUno;
 }
 
 .cajaHobbie{
@@ -412,9 +418,9 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  border: 2px solid $colorCuatro;
+  border: 2px solid $colorSombra;
   border-radius: 5px;
-  box-shadow: 0px 0px 5px $colorCuatro inset;
+  box-shadow: 0px 0px 5px $colorSombra inset;
   // transition: 1s all;
 }
 //para dar opacidad a los proyectos cuando pasen el mouse
@@ -438,34 +444,34 @@ body {
 .cajaFormulario {
   margin-bottom: 2rem;
   border-radius: 10px;
-  box-shadow: 5px 5px 15px 10px $colorCinco;
+  box-shadow: 5px 5px 10px 5px $colorSombra;
   max-width: 50vw;
 }
 //botón de enviar
 .btnColorUno{
-    background-color: $colorTres;
-    color: white;
+    background-color: $colorUno;
+    color: $colorTres;
     font-family: $fuenteUno;
     font-weight: bold;
     margin: 0px 12px 12px 12px;
 }
 //hover en botón de enviar
 .btnColorUno:hover{
-    background-color: $colorDos;
-    color:white;
+    background-color: $colorContenedor;
+    color:$colorTres;
 }
 //botón de resetear
 .btnColorDos{
-    background-color: $colorCinco;
-    color: white;
+    background-color: $BotonDos;
+    color: $colorTres;
     font-family: $fuenteUno;
     font-weight: bold;
     margin: 0px 12px 12px 12px;
 }
 //hover en el botón de resetear
 .btnColorDos:hover{
-    background-color: $colorSiete;
-    color: white;
+    background-color: $HoverBotonDos;
+    color: $colorTres;
 }
 
 #spinner {
@@ -475,11 +481,11 @@ body {
 
 .mensajeExitoso{
   // bg-primary', 'text-white', 'text-center', 'mt-2', 'p-2', 'fs-3
-  color: white;
+  color: $colorTres;
   font-family: $fuenteUno;
   font-weight: bold;
   font-size: 1rem;
-  background-color: $colorTres;
+  background-color: $colorUno;
   margin-top: 1rem;
   padding: 1rem;
   text-align: center;
@@ -496,22 +502,21 @@ body {
 
 .logoFooter{
   text-decoration: none;
-  color: $colorCinco;
+  color: $colorDos;
   font-family: $fuenteUno;
   font-style: italic;
   font-weight: bold;
   font-size: 4.5vw;
   text-align: center;
-  text-shadow: 2px 2px 5px $colorSeis;
 }
 
 .logoFooter:hover{
-  color: $colorDos;
+  color: $colorTres;
   text-shadow: 2px 2px 5px $colorDos; 
 }
 
 .footerInfo{
-  color: $colorCinco;
+  color: $colorDos;
   line-height: 1.5rem;
   margin: 8px 0px 8px 0px;
   // padding-bottom: 0.5rem;    
