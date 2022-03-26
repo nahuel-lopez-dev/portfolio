@@ -112,30 +112,34 @@ body {
   overflow: hidden;
 }
 //Usando webSymbolsRegular => S = rueda
+// .gear{
+//   font-family: $fuenteDos;
+//   margin: 0 1vw 0 0;
+//   font-size: 5vh;
+//   text-shadow: 0px 0px 3px $colorSombra;
+// }
 .gear{
   font-family: $fuenteDos;
   margin: 0 1vw 0 0;
-  font-size: 5vh;
-  // color: $colorDos;
-  text-shadow: 0px 0px 3px $colorSombra;
+  height: 10vh;
 }
 /***** animaciones *****/
 /*animación para hacer girar un elemento*/
-.rodar{
-  animation-name: rodar;
-  animation-duration: 1.9s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}  
-@keyframes rodar{
-  from{
-    transform: rotateZ(0deg);
-  }
-  to{
-    transform: rotateZ(360deg);
-  }
-}
-/*animación para hacer un elemento y que genere el efecto de desaparecer*/  
+// .rodar{
+//   animation-name: rodar;
+//   animation-duration: 2.9s;
+//   animation-iteration-count: infinite;
+//   animation-timing-function: linear;
+// }  
+// @keyframes rodar{
+//   from{
+//     transform: rotateZ(0deg);
+//   }
+//   to{
+//     transform: rotateZ(360deg);
+//   }
+// }
+/*animación para hacer caer un elemento y que genere el efecto de desaparecer*/  
 .logo:hover .gear{
   animation: cae 500ms linear;
 }
@@ -538,9 +542,9 @@ body {
   .proyecto{
     width: 40%;
   }
-  .justBeNice{
-    margin-bottom: 1.9rem;
-  }
+  // .justBeNice{
+  //   margin-bottom: 1.9rem;
+  // }
   #footer{
     min-height: 18vh;
   }
@@ -568,9 +572,9 @@ body {
   .logo{
     padding-right: 3vw;
   }
-  .gear{
-    font-size: 5vh;
-  }
+  // .gear{
+  //   font-size: 5vh;
+  // }
   // .justBeNice{
   //   font-size: 12vh;
   //   margin-left: 2vw;
@@ -663,9 +667,12 @@ body {
   .logo{
     padding-right: 3.5vw;
   }
+  // .gear{
+  //   font-size: 3.5vh;
+  //   margin-right: 0.5rem;
+  // }
   .gear{
-    font-size: 3.5vh;
-    margin-right: 0.5rem;
+    height: 7vh;
   }
   // .justBeNice{
   //   font-size: 7vh;
