@@ -561,11 +561,9 @@ body {
     margin-bottom: 0rem;
   }
   /*Para sacar la transformación de los items del menú*/
-  .hoverMenu{
-    transition: none;
-  }  
-  .hoverMenu:hover{
+  #menu:hover{
     transform: none;
+    text-decoration: none;
   }
   .logo{
     padding-right: 3vw;
@@ -573,11 +571,11 @@ body {
   .gear{
     font-size: 5vh;
   }
-  .justBeNice{
-    font-size: 12vh;
-    margin-left: 2vw;
-    margin-bottom: 1.8rem;
-  }  
+  // .justBeNice{
+  //   font-size: 12vh;
+  //   margin-left: 2vw;
+  //   margin-bottom: 1.8rem;
+  // }  
   .logo a {
     font-size: 6vw;
   }
@@ -641,9 +639,9 @@ body {
   .imgFotoPerfil{
     max-width: 40vw;
   }
-  .justBeNice{
-    margin-bottom: 1.7rem;
-  }  
+  // .justBeNice{
+  //   margin-bottom: 1.7rem;
+  // }  
 }
 //media query para mobile
 @media(max-width: 575.98px){
@@ -669,11 +667,11 @@ body {
     font-size: 3.5vh;
     margin-right: 0.5rem;
   }
-  .justBeNice{
-    font-size: 7vh;
-    padding-left: 0.5rem;
-    margin-top: 1.25rem;
-  }  
+  // .justBeNice{
+  //   font-size: 7vh;
+  //   padding-left: 0.5rem;
+  //   margin-top: 1.25rem;
+  // }  
   .logo a p {
     font-size: 2.75vh;
   }
