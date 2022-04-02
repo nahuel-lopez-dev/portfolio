@@ -85,7 +85,6 @@ function enviarEmail(e) {
 
           document.querySelector('#mensaje-enviado').appendChild( enviado );
           
-
           setTimeout(() =>  {
                enviado.remove();
                formularioEnviar.reset();
