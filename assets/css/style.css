@@ -1,266 +1,313 @@
 @charset "UTF-8";
-/** Estilos generales **/
+/* Estilos generales */
 * {
   list-style: none;
   text-decoration: none;
   margin: 0px;
   padding: 0px;
-  box-sizing: border-box; }
+  box-sizing: border-box; 
+}
 
-/***** Variables globales en SASS *****/
-/** Variables de colores personalizados **/
-/*Variables de colores de Bootstrap*/
-/** Variables de colores a usar para el portafolio**/
-/*Color del h1, subtitulos, textos en general y del botón uno*/
-/*color del logo (simbolo de la rueda y nombre), titulo de secciones y logo portafolio del footer */
-/*color de hover del logo, menú del navbar, y logo Portafolio del footer*/
-/*color de texto de la presentación*/
-/*Colores de sombras*/
-/*Color de botón uno*/
-/*Color de botón dos*/
-/*hover botón Dos*/
-/*Color para los background del header, titulos y footer*/
-/** Variables de fuentes de letras **/
-/** Fuentes **/
-@font-face {
-  font-family: "TrebuchetMS";
-  src: url(./fonts/TrebuchetMS/TrebuchetMS.ttf);
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: "BebasNeue";
-  src: url(./fonts/BebasNeue/BebasNeue.otf);
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: "WebSymbolsRegular";
-  src: url(./fonts/webSymbols/websymbols-regular-webfont.eot), url(./fonts/webSymbols/websymbols-regular-webfont.eot?#iefix) format("embedded-opentype"), url(./fonts/webSymbols/websymbols-regular-webfont.ttf) format("truetype"), url("./fonts/webSymbols/websymbols-regular-webfont.svg#WebSymbolsRegular") format("svg");
-  font-weight: normal;
-  font-style: normal; }
+/* Variables de colores a usar para el portafolio */
+:root{
+  /*Color del h1, subtitulos, textos en general y del botón uno*/
+  --colorUno:#212529;
+  /*color del logo (simbolo de la rueda y nombre), titulo de secciones y logo portafolio del footer */
+  --colorDos: #a8a8a8;
+  /*color de hover del logo, menú del navbar, y logo Portafolio del footer*/
+  --colorTres: #f8f9fa;
+  /*color de texto de la presentación*/
+  --colorCuatro: #3c4146;
+  /*Colores de sombras*/
+  --colorSombra: #ccc;
+  /*Color de botón uno*/
+  
+  /*Color de botón dos*/
+  /* --BotonDos: #dc3545; */
+  --BotonDos: #00538c;
+  /*hover botón Dos*/
+  /* --HoverBotonDos: #e60e23; */
+  --HoverBotonDos: #00395f;
+  /*Color para los background del header, titulos y footer*/
+  --colorContenedor: black;
+  /* Variables de fuentes de letras */
+  --fuenteUno: "Nunito", sans-serif; 
+}
 
 /*para que todas las letras en general tengan por defecto fuente 'Opens Sans'*/
 body {
-  font-family: 'Open Sans', sans-serif; }
+  font-family: 'Open Sans', sans-serif; 
+}
 
 /* clases para el header */
 #nav {
-  background-color: black;
-  min-height: 15vh; }
+  background-color: var(--colorContenedor);
+  min-height: 15vh; 
+}
 
 #menu {
   transition: all 300ms;
-  color: #a8a8a8; }
+  color: var(--colorDos); 
+}
 
 #menu:hover {
   transform: scale(1.15, 1.15);
   text-decoration: underline;
-  color: #f8f9fa; }
+  color: #f8f9fa; 
+}
 
 .logo {
   display: flex;
   align-items: center;
   margin-left: 3vw;
-  color: #a8a8a8;
+  color: var(--colorDos);
   padding-left: 1vw;
   padding-right: 2vw; }
 
 .logo:hover {
   color: #f8f9fa;
-  overflow: hidden; }
+  overflow: hidden; 
+}
 
 .gear {
-  font-family: "WebSymbolsRegular";
+  font-family: var(--fuenteDos);
   margin: 0 1vw 0 0;
   height: 10vh; }
 
-/***** animaciones *****/
-/*animación para hacer girar un elemento*/
+/* animaciones */
 /*animación para hacer caer un elemento y que genere el efecto de desaparecer*/
 .logo:hover .gear {
-  animation: cae 500ms linear; }
+  animation: cae 500ms linear; 
+}
 
 @keyframes cae {
   0% {
-    transform: translateY(0%); }
+    transform: translateY(0%); 
+  }
   50% {
-    transform: translateY(200%); }
+    transform: translateY(200%); 
+  }
   100% {
-    transform: translateY(0%); } }
+    transform: translateY(0%); 
+  } 
+}
 
 .logo a {
   text-decoration: none;
-  color: #a8a8a8;
-  font-family: "Nunito", sans-serif;
+  color: var(--colorDos);
+  font-family: var(--fuenteUno), sans-serif;
   font-style: italic;
   font-weight: bolder;
-  font-size: 3.5vh; }
+  font-size: 3.5vh; 
+}
 
 .logo:hover a {
   animation: fromRight 300ms linear;
-  color: #f8f9fa; }
+  color: #f8f9fa; 
+}
 
 @keyframes fromRight {
   from {
-    transform: translateX(200%); }
+    transform: translateX(200%); 
+  }
   to {
-    transform: translateX(0%); } }
+    transform: translateX(0%); 
+  } 
+}
 
 .desplazamiento {
   animation-name: desplazamiento;
   animation-duration: 800ms;
   animation-iteration-count: 1;
-  animation-timing-function: linear; }
+  animation-timing-function: linear; 
+}
 
 @keyframes desplazamiento {
   0% {
     margin-left: 30vw;
-    transform: rotate(360deg); }
+    transform: rotate(360deg); 
+  }
   25% {
     margin-left: 24vw;
-    transform: rotate(270deg); }
+    transform: rotate(270deg); 
+  }
   50% {
     margin-left: 18vw;
-    transform: rotate(180deg); }
+    transform: rotate(180deg); 
+  }
   75% {
     margin-left: 12vw;
-    transform: rotate(90deg); }
+    transform: rotate(90deg); 
+  }
   100% {
     margin-left: 0vw;
-    transform: rotate(0deg); } }
+    transform: rotate(0deg); 
+  } 
+}
 
 /*Transición para agrandar los items*/
 .trans {
-  transition: all 1s; }
+  transition: all 1s; 
+}
 
 .trans:hover {
-  transform: scale(1.1); }
+  transform: scale(1.1); 
+}
 
 .cajaIconosPresentacion {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
-  margin-top: 1.5rem; }
+  margin-top: 1.5rem; 
+}
 
 .iconoPresentacion {
   height: 8vh;
   width: auto;
-  background-color: #212529;
+  background-color: var(--colorUno);
   border-radius: 50%;
   padding: 4px;
-  transition: all 300ms; }
+  transition: all 300ms; 
+}
 
 .iconoPresentacion:hover {
-  opacity: 0.6; }
+  opacity: 0.6; 
+}
 
 .nombreIcono {
   text-align: center;
-  color: #212529;
-  font-size: 1.1rem; }
+  color: var(--colorUno);
+  font-size: 1.1rem; 
+}
 
 /* fin de animaciones, etiquetas, clases e id para el header*/
+
 /* Sección de presentación */
 .presentacion {
-  color: #3c4146;
+  color: var(--colorCuatro);
   display: flex;
   align-items: center;
-  letter-spacing: 1px; }
+  letter-spacing: 1px; 
+}
 
 .tituloPrincipal {
-  font-family: "Nunito", sans-serif;
+  font-family: var(--fuenteUno), sans-serif;
   font-size: 4rem;
-  color: #212529;
-  margin-top: 3rem; }
+  color: var(--colorUno);
+  margin-top: 3rem; 
+}
 
 .presentacionInfoPrincipal {
   font-size: 1.5rem;
-  max-width: 65vw; }
+  max-width: 65vw; 
+}
 
 .presentacion .foto .nombre {
-  margin-bottom: 8px; }
+  margin-bottom: 8px; 
+}
 
 .presentacionInfo {
-  order: 1; }
+  order: 1; 
+}
 
 .foto {
-  order: 2; }
+  order: 2; 
+}
 
 .imgFotoPerfil {
-  max-width: 23vw; }
+  max-width: 23vw; 
+}
 
 .nombre {
-  font-size: 1rem; }
+  font-size: 1rem; 
+}
 
 /* animaciones */
 .stretchRight {
   animation-name: stretchRight;
   animation-duration: 2.5s;
   animation-timing-function: ease-out;
-  transform-origin: 0% 0%; }
+  transform-origin: 0% 0%; 
+}
 
 @keyframes stretchRight {
   0% {
-    transform: scaleX(0.3); }
+    transform: scaleX(0.3); 
+  }
   40% {
-    transform: scaleX(1.02); }
+    transform: scaleX(1.02); 
+  }
   60% {
-    transform: scaleX(0.98); }
+    transform: scaleX(0.98); 
+  }
   80% {
-    transform: scaleX(1.01); }
+    transform: scaleX(1.01); 
+  }
   100% {
-    transform: scaleX(0.98); }
+    transform: scaleX(0.98); 
+  }
   80% {
-    transform: scaleX(1.01); }
+    transform: scaleX(1.01); 
+  }
   100% {
-    transform: scaleX(1); } }
+    transform: scaleX(1); 
+  } 
+}
 
 /* Sección sobre mí */
 .titulo {
-  font-style: "Nunito", sans-serif;
+  font-style: var(--fuenteUno), sans-serif;
   font-style: italic;
   text-align: center;
   margin: 20px 0px 20px 0px;
-  background-color: black;
-  color: #a8a8a8;
-  padding: 1rem; }
+  background-color: var(--colorContenedor);
+  color: var(--colorDos);
+  padding: 1rem; 
+}
 
 .resumen {
   font-size: 1.4rem;
-  letter-spacing: 1px; }
+  letter-spacing: 1px; 
+}
 
 .sobreMi {
   display: flex;
   flex-direction: column;
-  justify-content: start; }
+  justify-content: start; 
+}
 
 .subtitulo {
   margin-top: 0.5rem;
-  color: #212529; }
+  color: var(--colorUno); 
+}
 
 .cajaHobbie {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column; 
+}
 
 .iconoHobbie {
   height: 8vh;
   margin: 0.5rem;
   padding: 4px;
   width: auto;
-  align-self: flex-start; }
+  align-self: flex-start; 
+}
 
 /* Sección de Skills*/
 .cajaSkills {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  margin: 0 auto; }
+  margin: 0 auto; 
+}
 
 .iconoSkill {
   height: 8vh;
   width: auto;
   padding: 6px;
-  margin: 1.5rem 2.5rem 0 2.5rem; }
+  margin: 1.5rem 2.5rem 0 2.5rem; 
+}
 
 /* Sección de formación y los proyectos */
 /* Van a usar las mismas clases */
@@ -268,7 +315,8 @@ body {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  margin: 0 auto; }
+  margin: 0 auto; 
+}
 
 .proyecto {
   display: flex;
@@ -278,217 +326,287 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  border: 2px solid #ccc;
+  border: 2px solid var(--colorSombra);
   border-radius: 5px;
-  box-shadow: 0px 0px 5px #ccc inset; }
+  box-shadow: 0px 0px 5px var(--colorSombra) inset; 
+}
 
 .img {
   /*640 ancho x 426 alto*/
   width: 100%;
   height: auto;
   padding: 5px;
-  border-radius: 10px; }
+  border-radius: 10px; 
+}
 
 .info {
   line-height: 25px;
-  margin: 8px 0px 8px 0px; }
+  margin: 8px 0px 8px 0px; 
+}
 
 /*clases para la sección de contacto*/
 .cajaFormulario {
   margin-bottom: 2rem;
   border-radius: 10px;
-  box-shadow: 5px 5px 10px 5px #ccc;
-  max-width: 50vw; }
+  box-shadow: 5px 5px 10px 5px var(--colorSombra);
+  max-width: 50vw; 
+}
 
 .btnColorUno {
-  background-color: #212529;
-  color: #f8f9fa;
-  font-family: "Nunito", sans-serif;
+  background-color: var(--colorUno);
+  color: var(--colorTres);
+  font-family: var(--fuenteUno), sans-serif;
   font-weight: bold;
-  margin: 0px 12px 12px 12px; }
+  margin: 0px 12px 12px 12px; 
+}
 
 .btnColorUno:hover {
-  background-color: black;
-  color: #f8f9fa; }
+  background-color: var(--colorContenedor);
+  color: var(--colorTres); 
+}
 
 .btnColorDos {
-  background-color: #00538c;
-  color: #f8f9fa;
-  font-family: "Nunito", sans-serif;
+  background-color: var(--BotonDos);
+  color: var(--colorTres);
+  font-family: var(--fuenteUno), sans-serif;
   font-weight: bold;
-  margin: 0px 12px 12px 12px; }
+  margin: 0px 12px 12px 12px; 
+}
 
 .btnColorDos:hover {
-  background-color: #00395f;
-  color: #f8f9fa; }
+  background-color: var(--HoverBotonDos);
+  color: var(--colorTres); 
+}
 
 #spinner {
   display: none;
-  justify-content: center; }
+  justify-content: center; 
+}
 
 .mensajeExitoso {
-  color: #f8f9fa;
-  font-family: "Nunito", sans-serif;
+  color: var(--colorTres);
+  font-family: var(--fuenteUno), sans-serif;
   font-weight: bold;
   font-size: 1rem;
-  background-color: #212529;
+  background-color: var(--colorUno);
   margin-top: 1rem;
   padding: 1rem;
-  text-align: center; }
+  text-align: center; 
+}
 
 /* clases para el footer */
 #footer {
   max-width: 100vw;
   min-height: 22vh;
-  background-color: black;
-  text-align: center; }
+  background-color: var(--colorContenedor);
+  text-align: center; 
+}
 
 .logoFooter {
   text-decoration: none;
-  color: #a8a8a8;
-  font-family: "Nunito", sans-serif;
+  color: var(--colorDos);
+  font-family: var(--fuenteUno), sans-serif;
   font-style: italic;
   font-weight: bold;
   font-size: 4.5vw;
-  text-align: center; }
+  text-align: center; 
+}
 
 .logoFooter:hover {
-  color: #f8f9fa;
-  text-shadow: 2px 2px 5px #a8a8a8; }
+  color: var(--colorTres);
+  text-shadow: 2px 2px 5px var(--colorDos); 
+}
 
 .footerInfo {
-  color: #a8a8a8;
+  color: var(--colorDos);
   line-height: 1.5rem;
-  margin: 8px 0px 8px 0px; }
+  margin: 8px 0px 8px 0px; 
+}
 
 /* media querys para una mejor adaptación */
 @media (max-width: 1200px) {
   .presentacion {
-    justify-content: center; }
+    justify-content: center; 
+  }
   .tituloPrincipal {
     font-size: 2.7rem;
-    margin-top: 5rem; }
+    margin-top: 5rem; 
+  }
   .presentacionInfoPrincipal {
-    font-size: 1.25rem; }
+    font-size: 1.25rem; 
+  }
   .proyecto {
-    width: 40%; }
+    width: 40%; 
+  }
   #footer {
-    min-height: 18vh; } }
+    min-height: 18vh; 
+  } 
+}
 
 @media (max-width: 991.98px) {
   .tituloPrincipal {
     font-size: 2.4rem;
-    margin-top: 0rem; }
+    margin-top: 0rem; 
+  }
   .presentacionInfoPrincipal {
     font-size: 1.25rem;
-    max-width: 100vw; }
+    max-width: 100vw; 
+  }
   .imgFotoPerfil {
     max-width: 23vw;
     margin-top: 0rem;
-    margin-bottom: 0rem; }
+    margin-bottom: 0rem; 
+  }
   /*Para sacar la transformación de los items del menú*/
   #menu:hover {
     transform: none;
-    text-decoration: none; }
+    text-decoration: none; 
+  }
   .logo {
-    padding-right: 3vw; }
+    padding-right: 3vw; 
+  }
   .logo a {
-    font-size: 6vw; }
+    font-size: 6vw; 
+  }
   .logo a p {
-    font-size: 4vh; }
+    font-size: 4vh; 
+  }
   .presentacion {
     display: flex;
     flex-direction: column;
-    margin: 0 2rem 0 2rem; }
+    margin: 0 2rem 0 2rem; 
+  }
   .nombre {
-    display: none; }
+    display: none; 
+  }
   .foto {
-    order: 1; }
+    order: 1; 
+  }
   .presentacionInfo {
-    order: 2; }
+    order: 2; 
+  }
   .cajaIconosPresentacion {
-    margin-top: 0.5rem; }
+    margin-top: 0.5rem; 
+  }
   .iconoPresentacion {
-    height: 6vh; }
+    height: 6vh; 
+  }
   .resumen {
-    font-size: 1.25rem; }
+    font-size: 1.25rem; 
+  }
   .proyecto {
-    width: 45%; }
+    width: 45%; 
+  }
   .cajaFormulario {
-    max-width: 75vw; }
+    max-width: 75vw; 
+  }
   .logoFooter {
-    font-size: 6vw; }
+    font-size: 6vw; 
+  }
   .footerInfo {
-    padding-bottom: 0.5rem; } }
+    padding-bottom: 0.5rem; 
+  } 
+}
 
 @media (max-width: 768px) {
   .presentacion {
-    margin: 0rem 1.5rem 0rem 1.5rem; }
+    margin: 0rem 1.5rem 0rem 1.5rem; 
+  }
   .tituloPrincipal {
-    font-size: 2rem; }
+    font-size: 2rem; 
+  }
   .presentacionInfoPrincipal {
-    font-size: 1.25rem; }
+    font-size: 1.25rem; 
+  }
   .imgFotoPerfil {
-    max-width: 20vw; }
+    max-width: 20vw; 
+  }
   .proyecto {
-    width: 75%; }
+    width: 75%; 
+  }
   .imgFotoPerfil {
-    max-width: 40vw; } }
+    max-width: 40vw; 
+  } 
+}
 
 @media (max-width: 575.98px) {
   .tituloPrincipal {
-    font-size: 1.5rem; }
+    font-size: 1.5rem; 
+  }
   .presentacionInfoPrincipal {
-    font-size: 1rem; }
+    font-size: 1rem; 
+  }
   .imgFotoPerfil {
-    max-width: 40vw; }
+    max-width: 40vw; 
+  }
   .iconoPresentacion {
-    height: 6vh; }
+    height: 6vh; 
+  }
   .nombreIcono {
-    font-size: 0.8rem; }
+    font-size: 0.8rem; 
+  }
   .logo {
-    padding-right: 3.5vw; }
+    padding-right: 3.5vw; 
+  }
   .gear {
-    height: 7vh; }
+    height: 7vh; 
+  }
   .logo a p {
-    font-size: 2.75vh; }
+    font-size: 2.75vh; 
+  }
   .resumen {
     font-size: 1rem;
-    margin: 0rem 1.5rem 0rem 1.5rem; }
+    margin: 0rem 1.5rem 0rem 1.5rem; 
+  }
   .iconoHobbie {
-    margin: 0rem 1.5rem 0rem 1.5rem; }
+    margin: 0rem 1.5rem 0rem 1.5rem; 
+  }
   .subtitulo {
-    margin: 1rem 1.5rem 1rem 1.5rem; }
+    margin: 1rem 1.5rem 1rem 1.5rem; 
+  }
   .proyecto {
     width: 85vw;
-    height: auto; }
+    height: auto; 
+  }
   .cajaFormulario {
-    max-width: 85vw; }
+    max-width: 85vw; 
+  }
   .logoFooter {
-    font-size: 10vw; }
+    font-size: 10vw; 
+  }
   .info {
     line-height: 20px;
-    margin: 10px 0px 10px 0px; }
+    margin: 10px 0px 10px 0px; 
+  }
   footer h4 .info {
-    line-height: 30px; }
+    line-height: 30px; 
+  }
   .desplazamiento {
     animation-name: desplazamiento;
     animation-duration: 1200ms;
     animation-iteration-count: 1;
-    animation-timing-function: linear; }
+    animation-timing-function: linear; 
+  }
   @keyframes desplazamiento {
     0% {
       /* margin-left: 30vw; */
-      transform: rotate(360deg); }
+      transform: rotate(360deg); 
+    }
     25% {
       /* margin-left: 24vw; */
-      transform: rotate(270deg); }
+      transform: rotate(270deg); 
+    }
     50% {
       /* margin-left: 18vw; */
-      transform: rotate(180deg); }
+      transform: rotate(180deg); 
+    }
     75% {
       /* margin-left: 12vw; */
-      transform: rotate(90deg); }
+      transform: rotate(90deg); 
+    }
     100% {
       /* margin-left: 0vw; */
-      transform: rotate(0deg); } } }
+      transform: rotate(0deg); 
+    } 
+  } 
+}
