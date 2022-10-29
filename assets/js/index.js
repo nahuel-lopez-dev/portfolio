@@ -18,10 +18,10 @@ function eventListeners() {
      document.addEventListener('DOMContentLoaded', inicioApp);
 
      // Campos del formulario
-     nombre.addEventListener('blur', validarFormulario);
-     email.addEventListener('blur', validarFormulario);
-     asunto.addEventListener('blur', validarFormulario);
-     mensaje.addEventListener('blur', validarFormulario);
+     nombre.addEventListener('input', validarFormulario);
+     email.addEventListener('input', validarFormulario);
+     asunto.addEventListener('input', validarFormulario);
+     mensaje.addEventListener('input', validarFormulario);
 
      // Boton de enviar en el submit
      formularioEnviar.addEventListener('submit', enviarEmail);
