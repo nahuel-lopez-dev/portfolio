@@ -51,7 +51,7 @@ function validarFormulario(e) {
           validarEmail(this);
      }
 
-     if(email.value !== '' && asunto.value !== '' && mensaje.value !== '' ) {
+     if(email.value !== '' && asunto.value !== '' && mensaje.value !== '' && emailRegEx.test(email.value.toLowerCase()) ) {
         btnEnviar.disabled = false;
         btnEnviar.classList.remove('disabled');
      }
