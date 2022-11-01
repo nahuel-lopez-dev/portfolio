@@ -21,13 +21,13 @@
   /*Colores de sombras*/
   --colorSombra: #ccc;
   /*Color de botón uno*/
-  
+  --btnUno: #212529;
   /*Color de botón dos*/
   /* --BotonDos: #dc3545; */
-  --BotonDos: #00538c;
+  --btnDos: #00538c;
   /*hover botón Dos*/
   /* --HoverBotonDos: #e60e23; */
-  --HoverBotonDos: #00395f;
+  --btnDosHover: #00395f;
   /*Color para los background del header, titulos y footer*/
   --colorContenedor: black;
   /* Variables de fuentes de letras */
@@ -366,7 +366,7 @@ body {
 }
 
 .btnColorDos {
-  background-color: var(--BotonDos);
+  background-color: var(--btnDos);
   color: var(--colorTres);
   font-family: var(--fuenteUno), sans-serif;
   font-weight: bold;
@@ -374,11 +374,11 @@ body {
 }
 
 .btnColorDos:hover {
-  background-color: var(--HoverBotonDos);
+  background-color: var(--btnDosHover);
   color: var(--colorTres); 
 }
 
-#spinner {
+/* #spinner {
   display: none;
   justify-content: center; 
 }
@@ -392,7 +392,7 @@ body {
   margin-top: 1rem;
   padding: 1rem;
   text-align: center; 
-}
+} */
 
 /* clases para el footer */
 #footer {

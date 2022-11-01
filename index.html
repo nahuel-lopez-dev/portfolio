@@ -19,6 +19,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <!-- Enlace a css de bootstrap local-->
     <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.css">
+    <!-- Enlace al CSS del spinner -->
+    <link rel="stylesheet" href="./assets/css/spinner.css">
     <!-- Enlace a css local -->
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
@@ -528,49 +530,54 @@
         <!-- Fin de la sección acerca de los proyectos -->
 
         <!-- Sección de contacto-->
-        <section>
-            <h2 id="contact" class="titulo fs-1 mt-5">Contacto</h2>
-            <form name="contacto" id="enviar-email" class="container cajaFormulario bg-light mt-5 mb-5" method="POST" netlify>
+        <section class="container">
+            <h2 id="contact" class="titulo text-center fs-1 mt-5">Contacto</h2>
+            <form name="contacto" id="formulario" class="container cajaFormulario bg-light mt-5 mb-5" method="POST" netlify>
                 <div class="row">
+                    <!-- Nombre -->
                     <div class="form-group col-md-6">
                         <label for="nombre"></label>
-                        <input id="nombre" name="name" type="text" class="form-control"
+                        <input id="nombre" name="nombre" type="text" class="form-control"
                             placeholder="Tu nombre o empresa" required maxlength="50" title="Este campo no puede estar vacío, ni tener más de 50 caracteres">
                     </div>
+                    <!-- Email -->
                     <div class="form-group col-md-6 mb-3">
                         <label for="email"></label>
                         <input id="email" type="email" name="email" class="form-control" placeholder="texto@texto.com" required maxlength="50">
                     </div>
                 </div>
+                <!-- Asunto -->
                 <div class="form-group col-md-12 mb-3">
                     <label for="asunto"></label>
-                    <input id="asunto" type="text" class="form-control" placeholder="Asunto" required maxlength="50" title="Este campo no puede estar vacío, ni tener más de 50 caracteres">
+                    <input id="asunto" type="text" name="asunto" class="form-control" placeholder="Asunto" required maxlength="50" title="Este campo no puede estar vacío, ni tener más de 50 caracteres">
                 </div>
+                <!-- Mensaje -->
                 <div class="col-md-12 text-white">
-                    <label for="mensaje" class="form-label m-2 text-body fs-5">Escribe tu
-                        mensaje aquí:</label>
-                    <textarea class="form-control" name="message" id="mensaje" rows="5" required maxlength="300" title="Este campo no puede estar vacío, ni tener más de 300 caracteres"></textarea>
+                    <label for="mensaje" class="form-label m-2 text-body fs-5">Escribe tu mensaje aquí:</label>
+                    <textarea class="form-control" name="mensaje" id="mensaje" rows="5" required maxlength="300" title="Este campo no puede estar vacío, ni tener más de 300 caracteres"></textarea>
                 </div>
-                <div id="mensaje-enviado"></div>
+                <!-- Botones del formulario -->
+                <div id="botonesFormulario" class="form-group text-center">
+                    <button id="btnSubmit" type="submit" class="btn btn-lg btnColorUno m-3 bg-gradient" disabled>Enviar</button>
+                    <button id="btnReset" type="reset" class="btn btn-lg btnColorDos m-3 bg-gradient">Borrar</button>
+                </div>
 
-                <div id="spinner">
-                    <div class="d-flex mt-1 mb-1 p-2">
-                        <div class="spinner-border text-primary" role="status">
-                          <span class="visually-hidden">Loading...</span>
-                        </div>
+                <!-- Spinner de enviando mensaje -->
+                <div id="spinner" class="visually-hidden justify-content-center mb-3 p-3">
+                    <div class="sk-chase">
+                        <div class="sk-chase-dot"></div>
+                        <div class="sk-chase-dot"></div>
+                        <div class="sk-chase-dot"></div>
+                        <div class="sk-chase-dot"></div>
+                        <div class="sk-chase-dot"></div>
+                        <div class="sk-chase-dot"></div>
                     </div>
                 </div>
-
-                <div id="botonesFormulario" class="form-group text-center">
-                    <button id="enviar" type="submit" class="btn btn-lg btnColorUno m-3 bg-gradient">Enviar</button>
-                    <button id="resetBtn" type="reset" class="btn btn-lg btnColorDos m-3 bg-gradient">Borrar</button>
-                    <!-- <input id="enviar" type="submit" class="btn btn-lg btnColorUno m-3 bg-gradient" value="Enviar"> -->
-                    <!-- <input type="reset" class="btn btn-lg btnColorDos m-3 bg-gradient" value="Borrar"> -->
-                </div>
+                <!-- Fin de Spinner -->
             </form>
         </section>
+        <!-- Fin de la sección de contacto -->
     </main>
-    <!-- Fin de la sección de contacto -->
     <!-- Acá termina el contenido principal -->
 
     <!-- Acá empieza el pie de página -->
