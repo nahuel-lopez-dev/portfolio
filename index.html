@@ -23,6 +23,8 @@
     <link rel="stylesheet" href="./assets/css/spinner.css">
     <!-- Enlace a css local -->
     <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/b3f17f1dac.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -61,7 +63,7 @@
                             <a id="menu" class="nav-link m-2" href="#trabajos">Proyectos</a>
                         </li>
                         <li class="nav-item">
-                            <a id="menu" class="nav-link m-2" href="#contact">Contacto</a>
+                            <a id="menu" class="nav-link m-2 border rounded" href="#contact">Contratar</a>
                         </li>
                     </ul>
                 </div>
@@ -555,40 +557,40 @@
         <!-- Fin de la sección acerca de los proyectos -->
 
         <!-- Sección de contacto-->
-        <h2 id="contact" class="titulo text-center fs-1 mt-5">Contacto</h2>
+        <!-- <h2 id="contact" class="titulo text-center fs-1 mt-5">Contacto</h2>
         <section class="container">
             <form name="contacto" id="formulario" class="container cajaFormulario bg-light mt-5 mb-5" method="POST" netlify>
-                <div class="row">
+                <div class="row"> -->
                     <!-- Nombre -->
-                    <div class="form-group col-md-6">
+                    <!-- <div class="form-group col-md-6">
                         <label for="nombre"></label>
                         <input id="nombre" name="nombre" type="text" class="form-control"
                             placeholder="Tu nombre o empresa" required maxlength="50" title="Este campo no puede estar vacío, ni tener más de 50 caracteres">
-                    </div>
+                    </div> -->
                     <!-- Email -->
-                    <div class="form-group col-md-6 mb-3">
+                    <!-- <div class="form-group col-md-6 mb-3">
                         <label for="email"></label>
                         <input id="email" type="email" name="email" class="form-control" placeholder="texto@texto.com" required maxlength="50">
                     </div>
-                </div>
+                </div> -->
                 <!-- Asunto -->
-                <div class="form-group col-md-12 mb-3">
+                <!-- <div class="form-group col-md-12 mb-3">
                     <label for="asunto"></label>
                     <input id="asunto" type="text" name="asunto" class="form-control" placeholder="Asunto" required maxlength="50" title="Este campo no puede estar vacío, ni tener más de 50 caracteres">
-                </div>
+                </div> -->
                 <!-- Mensaje -->
-                <div class="col-md-12 text-white">
+                <!-- <div class="col-md-12 text-white">
                     <label for="mensaje" class="form-label m-2 text-body fs-5">Escribe tu mensaje aquí:</label>
                     <textarea class="form-control" name="mensaje" id="mensaje" rows="5" required maxlength="300" title="Este campo no puede estar vacío, ni tener más de 300 caracteres"></textarea>
-                </div>
+                </div> -->
                 <!-- Botones del formulario -->
-                <div id="botonesFormulario" class="form-group text-center">
+                <!-- <div id="botonesFormulario" class="form-group text-center">
                     <button id="btnSubmit" type="submit" class="btn btn-lg btnColorUno m-3 bg-gradient" disabled>Enviar</button>
                     <button id="btnReset" type="reset" class="btn btn-lg btnColorDos m-3 bg-gradient">Borrar</button>
-                </div>
+                </div> -->
 
                 <!-- Spinner de enviando mensaje -->
-                <div id="spinner" class="visually-hidden justify-content-center mb-3 p-3">
+                <!-- <div id="spinner" class="visually-hidden justify-content-center mb-3 p-3">
                     <div class="sk-chase">
                         <div class="sk-chase-dot"></div>
                         <div class="sk-chase-dot"></div>
@@ -597,25 +599,59 @@
                         <div class="sk-chase-dot"></div>
                         <div class="sk-chase-dot"></div>
                     </div>
-                </div>
+                </div> -->
                 <!-- Fin de Spinner -->
-            </form>
-        </section>
+            <!-- </form>
+        </section> -->
         <!-- Fin de la sección de contacto -->
     </main>
     <!-- Acá termina el contenido principal -->
 
     <!-- Acá empieza el pie de página -->
-    <footer id="footer" class="border-top">
+    <h2 id="contact" class="titulo text-center fs-1 mt-5">Contratar</h2>
+    <footer id="footer" class="border-top container-fluid">
+        <div class="container">
+            <div class="row justify-content-around mt-3 gap-2 p-2">
+                <div class="footerContacto col-10 col-md-5 col-xl-4 col-xxl-3 mb-2">
+                    <div class="d-flex flex-column justify-content-start align-items-start">
+                        <h4 class="mb-3">Servicios:</h4>
+                        <p>Desarrollo web</p>
+                        <p>Análisis de Datos</p>
+                        <p>Desarrollo Backend</p>
+                    </div>
+                </div>
+                <div class="footerContacto col-10 col-md-5 col-xl-4 col-xxl-3 mb-2">
+                    <div class="d-flex flex-column justify-content-start align-items-start">
+                        <h4 class="mb-3">Contacto:</h4>
+                        <div class="mb-3">
+                            <span><i class="fa-solid fa-phone me-1"></i></span>(+54)1168076800
+                        </div>
+                        <div class="mb-3">
+                            <span><i class="fa-solid fa-envelope me-1"></i></span>nahuel.developer1@gmail.com
+                        </div>
+                        <div class="border border-secondary rounded p-2">
+                            <a href="mailTo:nahuel.developer1@gmail.com" id="escribeme" class="text-decoration-none footerContacto"><span><i class="fa-solid fa-message me-2"></i></span>Escríbeme</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footerContacto col-10 col-md-5 col-xl-4 col-xxl-3 mb-2">
+                    <div class="d-flex flex-column justify-content-start align-items-start">
+                        <h4>Redes Sociales</h4>
+                        <div>
+                            <a href="https://github.com/Nahuel-DevOne/" target="_blank" class="m-2"><img src="img/social/github.svg"
+                                alt="Imagen del icono de GitHub" class="iconoPresentacion"></a>
+                            <a href="https://www.linkedin.com/in/nahuel-developer/" target="_blank" class="m-2"><img
+                                src="img/social/linkedin.svg" alt="Imagen del icono de linkedIn" class="iconoPresentacion"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="container-fluid m-0 p-0">
             <a href="#" class="logoFooter">Portafolio</a>
-            <!-- <div class="column pie">
-                <a href="https://github.com/Nahuel-DevOne/" target="_blank" class="m-2"><img src="./img/github.svg"
-                        alt="Imagen del icono de GitHub" class="icono"></a>
-                <a href="https://www.linkedin.com/in/nahuel-developer/" target="_blank" class="m-2"><img
-                        src="./img/linkedin.svg" alt="Imagen del icono de linkedIn" class="icono"></a>
-            </div> -->
-            <h4 class="footerInfo p-2 mb-2">&copy;2022 Desarrollado con ❤️ por Nahuel-DevOne</h4>
+        </div>
+        <div class="container">
+            <h4 class="footerInfo pb-4 m-0">&copy;2023 Desarrollado con ❤️ por Nahuel-DevOne</h4>
         </div>
     </footer>
     <!-- Acá termina el pie de página -->
@@ -623,7 +659,7 @@
     <!-- Enlace a JavaScript de bootstrap local -->
     <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
     <!-- Enlace a JavaScript local -->
-    <script src="./assets/js/index.js"></script>
+    <!-- <script src="./assets/js/index.js"></script> -->
 </body>
 
 </html>

@@ -402,8 +402,7 @@ body {
 
 /* clases para el footer */
 #footer {
-  /* max-width: 100vw; */
-  height: 22vh;
+  min-height: 20vh;
   background-color: var(--colorContenedor);
   text-align: center; 
 }
@@ -414,7 +413,7 @@ body {
   font-family: var(--fuenteUno), sans-serif;
   font-style: italic;
   font-weight: bold;
-  font-size: 4.5vw;
+  font-size: 3.5vw;
   text-align: center; 
 }
 
@@ -423,10 +422,18 @@ body {
   text-shadow: 2px 2px 5px var(--colorDos); 
 }
 
+.footerContacto{
+  color: var(--colorDos);
+}
+
 .footerInfo {
   color: var(--colorDos);
   line-height: 1.5rem;
   margin: 8px 0px 8px 0px; 
+}
+
+#escribeme:hover {
+  color: var(--colorTres)
 }
 
 /* media querys para una mejor adaptación */
@@ -445,7 +452,7 @@ body {
     width: 40%; 
   }
   #footer {
-    min-height: 18vh; 
+    min-height: 15vh; 
   } 
 }
 
@@ -532,6 +539,9 @@ body {
   }
   .imgFotoPerfil {
     max-width: 40vw; 
+  }
+  #footer {
+    min-height: 70vh; 
   } 
 }
 
