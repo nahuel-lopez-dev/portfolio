@@ -402,7 +402,7 @@ body {
 
 /* clases para el footer */
 #footer {
-  min-height: 20vh;
+  min-height: 30vh;
   background-color: var(--colorContenedor);
   text-align: center; 
 }
@@ -413,7 +413,7 @@ body {
   font-family: var(--fuenteUno), sans-serif;
   font-style: italic;
   font-weight: bold;
-  font-size: 3.5vw;
+  font-size: 2rem;
   text-align: center; 
 }
 
@@ -452,7 +452,7 @@ body {
     width: 40%; 
   }
   #footer {
-    min-height: 15vh; 
+    min-height: 1.8rem; 
   } 
 }
 
@@ -512,9 +512,6 @@ body {
   }
   .cajaFormulario {
     max-width: 75vw; 
-  }
-  .logoFooter {
-    font-size: 6vw; 
   }
   .footerInfo {
     padding-bottom: 0.5rem; 
@@ -588,7 +585,7 @@ body {
     max-width: 85vw; 
   }
   .logoFooter {
-    font-size: 10vw; 
+    font-size: 1.7rem; 
   }
   .info {
     line-height: 20px;
