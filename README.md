@@ -1,5 +1,5 @@
 # **`Portfolio`** 
-## *Data Analyst & Full Stack Developer*
+## **Data Analyst & Full Stack Developer**
 ### *Nahuel-DevOne⚡*
 
 ### *`Información:`*
@@ -7,13 +7,13 @@
 #### Soy Analista de datos, Desarrollador Full Stack MERN, Python, tutor de JavaScript y profesor de matemática. Mi objetivo es trabajar en equipos, donde pueda aplicar mis conocimientos y seguir creciendo constantemente a nivel profesional, mientras refuerzo mi stack y aprendo nuevas tecnologías.
 #### El portfolio continua en proceso de mejora, mientras sigo agregando proyectos.
 
-### *`Version 1.0.0:`*
+### `Version 1.0.0:`
 
   [![Portofolio](https://img.shields.io/badge/Portfolio-informational?style=for-the-badge&logo=github&logoColor=fff&color=23272d)](https://nahuel-devone.github.io/portfolio/)
 
 ### `🛠 Tech Stack:`
 
-### Tools:
+### **Tools:**
 
 ![Git](https://img.shields.io/badge/-Git-05122A?style=flat&logo=git&logoColor=F05032)&nbsp;
 [![GitHub](https://img.shields.io/badge/-GitHub-05122A?style=flat&logo=github&logoColor=lightgrey&link=https://github.com/Nahuel-DevOne)](https://github.com/Nahuel-DevOne)&nbsp;
@@ -23,7 +23,7 @@
 ![Anaconda](https://img.shields.io/badge/-Anaconda-05122A?style=flat&logo=anaconda)&nbsp;
 ![Markdown](https://img.shields.io/badge/-Markdown-05122A?style=flat&logo=markdown)&nbsp;
 
-### Front-end:
+### **Front-end:**
 ![HTML5](https://img.shields.io/badge/-HTML5-05122A?style=flat&logo=html5&logoColor=F05032&link=https://developer.mozilla.org/es/docs/Glossary/HTML5)&nbsp;
 ![CSS3](https://img.shields.io/badge/-CSS3-05122A?style=flat&logo=CSS3&logoColor=1572B6)&nbsp;
 ![Sass](https://img.shields.io/badge/-Sass-05122A?style=flat&logo=sass&logoColor=cc6699)&nbsp;
@@ -34,7 +34,7 @@
 ![React](https://img.shields.io/badge/-React-05122A?style=flat&logo=React&logoColor=61DAFB)&nbsp;
 ![Firebase](https://img.shields.io/badge/-Firebase-05122A?style=flat&logo=Firebase&logoColor=FFA611)
 
-### Backend & Data Analysis:
+### **Backend & Data Analysis:**
 
 ![Python](https://img.shields.io/badge/-Python-05122A?style=flat&logo=python&logoColor=blue)&nbsp;
 ![Flask](https://img.shields.io/badge/-Flask-05122A?style=flat&logo=flask)\
@@ -52,7 +52,7 @@
 ![Handlebars](https://img.shields.io/badge/-Handlebars-05122A?style=flat&logo=handlebars.js&logoColor=A86454)
 <!-- ![Django](https://img.shields.io/badge/-Django-05122A?style=flat&logo=django&logoColor=darkgreen)\ -->
 
-### Databases:
+### **Databases:**
 
 ![MySQL](https://img.shields.io/badge/-SQL:-05122A?style=flat&logo=sql&logoColor=FFA611)&nbsp;
 ![MySQL](https://img.shields.io/badge/-MySQL-05122A?style=flat&logo=MySQL&logoColor=FFA611)&nbsp;
