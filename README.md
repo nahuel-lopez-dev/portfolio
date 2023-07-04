@@ -9,7 +9,7 @@
 
 ### Version 1.0.0:
 
-  [![Portofolio](https://img.shields.io/badge/Portfolio-informational?style=for-the-badge&logo=github&logoColor=fff&color=23272d)](https://nahuel-devone.github.io/portfolio/)
+  [![Portofolio](https://img.shields.io/badge/Portfolio-informational?style=for-the-badge&logo=github&logoColor=fff&color=grey)](https://nahuel-devone.github.io/portfolio/)
 
 ### `🛠 Tech Stack:`
 
@@ -54,10 +54,9 @@
 
 #### **Databases:**
 
-![MySQL](https://img.shields.io/badge/-SQL:-05122A?style=flat&logo=sql&logoColor=FFA611)&nbsp;
+![SQL](https://img.shields.io/badge/-SQL:-05122A?style=flat&logo=sql&logoColor=FFA611)&nbsp;
 ![MySQL](https://img.shields.io/badge/-MySQL-05122A?style=flat&logo=MySQL&logoColor=FFA611)&nbsp;
 ![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-05122A?style=flat&logo=PostgreSQL&logoColor=316192)&nbsp;
-![Sequelize](https://img.shields.io/badge/Sequelize-05122A?style=flat&logo=Sequelize&logoColor=52B0E7)&nbsp;
 ![NoSQL](https://img.shields.io/badge/-NoSQL:-05122A?style=flat&logo=NoSQL&logoColor=lightgreen)&nbsp;
 ![MongoDB](https://img.shields.io/badge/-MongoDB-05122A?style=flat&logo=mongoDB&logoColor=lightgreen)&nbsp;
 ![Mongoose](https://img.shields.io/badge/-Mongoose-05122A?style=flat&logo=mongoose&logoColor=a43433)&nbsp;
