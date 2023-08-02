@@ -162,7 +162,7 @@ body {
 }
 
 .iconoPresentacion {
-  height: 8vh;
+  height: 6.5vh;
   width: auto;
   background-color: var(--colorUno);
   border-radius: 50%;
@@ -453,6 +453,9 @@ body {
   }
   #footer {
     min-height: 1.8rem; 
+  }
+  .iconoPresentacion {
+    height: 5vh; 
   } 
 }
 
@@ -502,7 +505,7 @@ body {
     margin-top: 0.5rem; 
   }
   .iconoPresentacion {
-    height: 6vh; 
+    height: 5vh; 
   }
   .resumen {
     font-size: 1.25rem; 
@@ -553,7 +556,7 @@ body {
     max-width: 40vw; 
   }
   .iconoPresentacion {
-    height: 6vh; 
+    height: 4vh; 
   }
   .nombreIcono {
     font-size: 0.8rem; 
