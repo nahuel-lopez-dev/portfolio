@@ -37,6 +37,7 @@
 #### **Backend & Data Analysis:**
 
 ![Python](https://img.shields.io/badge/-Python-05122A?style=flat&logo=python&logoColor=blue)&nbsp;
+![Django](https://img.shields.io/badge/-Django-05122A?style=flat&logo=django&logoColor=darkgreen)&nbsp;
 ![Flask](https://img.shields.io/badge/-Flask-05122A?style=flat&logo=flask)\
 ![Numpy](https://img.shields.io/badge/-Numpy-05122A?style=flat&logo=numpy&logoColor=55a6ca)&nbsp;
 ![Pandas](https://img.shields.io/badge/-Pandas-05122A?style=flat&logo=pandas&logoColor=white)&nbsp;
@@ -50,7 +51,6 @@
 ![EJS](https://img.shields.io/badge/-EJS-05122A?style=flat)&nbsp;
 ![pug](https://img.shields.io/badge/-pug-05122A?style=flat&logo=pug&logoColor=A86454)&nbsp;
 ![Handlebars](https://img.shields.io/badge/-Handlebars-05122A?style=flat&logo=handlebars.js&logoColor=A86454)
-<!-- ![Django](https://img.shields.io/badge/-Django-05122A?style=flat&logo=django&logoColor=darkgreen)\ -->
 
 #### **Databases:**
 
