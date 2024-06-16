@@ -104,7 +104,7 @@ Si quieres saber más sobre mí, puedes ver mi Portfolio o bien ir a mi perfil d
 [![Portfolio](https://img.shields.io/badge/-Portfolio-gray?style=flat&logo=stackoverflow&logoColor=white)](https://nahuel-devone.github.io/portfolio/)
 
 <div align="center">
-  <p>Developed with 💙 by <i><b>Nahuel Dev1⚡</b></i></p>
+  <p>Desarrollado con 💙 por <i><b>Nahuel Dev1⚡</b></i></p>
 </div>
 
 ---
