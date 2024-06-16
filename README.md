@@ -103,7 +103,9 @@ Si quieres saber más sobre mí, puedes ver mi Portfolio o bien ir a mi perfil d
 [![Linktree](https://img.shields.io/badge/-Linktree-323330?flat&logo=linktree&logoColor=#41e45f)](https://linktr.ee/nahuel.lopez)&nbsp;
 [![Portfolio](https://img.shields.io/badge/-Portfolio-gray?style=flat&logo=stackoverflow&logoColor=white)](https://nahuel-devone.github.io/portfolio/)
 
-Desarrollado con 💙 por [*Nahuel Dev1⚡*](https://linktr.ee/nahuel.lopez)
+<div align="center">
+  <p>Developed with 💙 by <i><b>Nahuel Dev1⚡</b></i></p>
+</div>
 
 ---
 
