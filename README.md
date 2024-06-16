@@ -11,7 +11,7 @@
 ## Información:
 Este mi portfolio, temporalmente, ya que se encuentra en modificaciones y mejoras.
 
-## Demo:
+## Web:
 
   [![Portofolio](https://img.shields.io/badge/Portfolio_v1.0.0-informational?style=for-the-badge&logo=github&logoColor=fff&color=grey)](https://nahuel-devone.github.io/portfolio/)
 
