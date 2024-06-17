@@ -8,14 +8,15 @@
 </p>
 </section>
 
-## Información
+## 📌 **Información**
+
 Este mi portfolio, que se encuentra constantemente en modificaciones y mejoras, a medida que avanzo con nuevas formaciones y desarrollo nuevos proyectos.
 
-## Web
+## 🪄 **Web**
 
   [![Portofolio](https://img.shields.io/badge/Portfolio_v1.0.0-informational?style=for-the-badge&logo=github&logoColor=fff&color=grey)](https://nahuel-devone.github.io/portfolio/)
 
-## 🛠 Tech Stack
+## 🛠️ **Tech Stack**
 
 ### Tools:
 
@@ -85,7 +86,7 @@ Este mi portfolio, que se encuentra constantemente en modificaciones y mejoras, 
 ![React](https://img.shields.io/badge/-React-05122A?style=flat&logo=React&logoColor=61DAFB)
 
 
-## **Autor**
+## 👋🏽 **Autor**
 
 <div>
   <p>¡Hola, mi nombre es <b><i>Nahuel</i></b> 👋🏽! <br></p>
