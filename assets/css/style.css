@@ -194,7 +194,7 @@ body {
 
 .tituloPrincipal {
   font-family: var(--fuenteUno), sans-serif;
-  font-size: 3.5rem;
+  font-size: 3.3rem;
   color: var(--colorUno);
   margin-top: 3rem; 
 }

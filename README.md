@@ -8,14 +8,14 @@
 </p>
 </section>
 
-## Información:
-Este mi portfolio, temporalmente, ya que se encuentra en modificaciones y mejoras.
+## Información
+Este mi portfolio, que se encuentra constantemente en modificaciones y mejoras, a medida que avanzo con nuevas formaciones y desarrollo nuevos proyectos.
 
-## Web:
+## Web
 
   [![Portofolio](https://img.shields.io/badge/Portfolio_v1.0.0-informational?style=for-the-badge&logo=github&logoColor=fff&color=grey)](https://nahuel-devone.github.io/portfolio/)
 
-## 🛠 Tech Stack:
+## 🛠 Tech Stack
 
 ### Tools:
 
