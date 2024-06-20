@@ -336,7 +336,6 @@ body {
 .proyecto-hover:hover {
   background-color: var(--colorContenedor);
   color: var(--colorTres);
-  /* background-blend-mode: darken; */
   transition: all 1.1s;
 }
 
@@ -495,7 +494,6 @@ body {
   .presentacion {
     display: flex;
     flex-direction: column;
-    margin: 0 2rem 0 2rem; 
   }
   .nombre {
     display: none; 
@@ -527,9 +525,6 @@ body {
 }
 
 @media (max-width: 768px) {
-  .presentacion {
-    margin: 0rem 1.5rem 0rem 1.5rem; 
-  }
   .tituloPrincipal {
     font-size: 2rem; 
   }
@@ -553,6 +548,9 @@ body {
 @media (max-width: 575.98px) {
   .tituloPrincipal {
     font-size: 1.5rem; 
+  }
+  .presentacion{
+    margin: 0rem 1.5rem 0rem 1.5rem;
   }
   .presentacionInfoPrincipal {
     font-size: 1rem; 
