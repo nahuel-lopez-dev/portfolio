@@ -14,7 +14,7 @@ Este mi portfolio, que se encuentra constantemente en modificaciones y mejoras, 
 
 ## 🪄 **Web**
 
-  [![Portofolio](https://img.shields.io/badge/Portfolio_v1.0.0-informational?style=for-the-badge&logo=github&logoColor=fff&color=grey)](https://nahuel-devone.github.io/portfolio/)
+  [![Portofolio](https://img.shields.io/badge/Portfolio_v1.0.0-informational?style=for-the-badge&logo=github&logoColor=fff&color=grey)](https://nahuel-lopez-dev.github.io/portfolio/)
 
 ## 🛠️ **Tech Stack**
 
@@ -99,13 +99,13 @@ Si quieres saber más sobre mí, puedes ver mi Portfolio o bien ir a mi perfil d
   
 💬 Siéntete libre de ponerte en contacto conmigo:
 
-[![Contact Me](https://img.shields.io/badge/Gmail-informational?flat&logo=Mail.Ru&logoColor=fff&color=c6362c)](mailto:nahue.developer1@gmail.com)&nbsp;
+[![Contact Me](https://img.shields.io/badge/Gmail-informational?flat&logo=Mail.Ru&logoColor=fff&color=c6362c)](mailto:nahuel.lopez.dev@gmail.com)&nbsp;
 [![LinkedId](https://img.shields.io/badge/LinkedIn-informational?flat&logo=linkedin&logoColor=fff&color=0274b3)](https://www.linkedin.com/in/nahuel-developer/)&nbsp;
 [![Linktree](https://img.shields.io/badge/-Linktree-323330?flat&logo=linktree&logoColor=#41e45f)](https://linktr.ee/nahuel.lopez)&nbsp;
-[![Portfolio](https://img.shields.io/badge/-Portfolio-gray?style=flat&logo=stackoverflow&logoColor=white)](https://nahuel-devone.github.io/portfolio/)
+[![Portfolio](https://img.shields.io/badge/-Portfolio-gray?style=flat&logo=stackoverflow&logoColor=white)](https://nahuel-lopez-dev.github.io/portfolio/)
 
 <div align="center">
-  <p>Desarrollado con 💙 por <i><b>Nahuel Dev1⚡</b></i></p>
+  <p>Desarrollado con 💙 por <i><b>NaLo Dev♾️</b></i></p>
 </div>
 
 ---
