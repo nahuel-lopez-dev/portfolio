@@ -23,10 +23,10 @@
   /*Color de botón uno*/
   --btnUno: #212529;
   /*Color de botón dos*/
-  /* --BotonDos: #dc3545; */
   --btnDos: #00538c;
+  /*hover botón Uno*/
+  --btnUnoHover:#a8a8a8;
   /*hover botón Dos*/
-  /* --HoverBotonDos: #e60e23; */
   --btnDosHover: #00395f;
   /*Color para los background del header, titulos y footer*/
   --colorContenedor: #05122A;
@@ -336,7 +336,7 @@ body {
 .proyecto-hover:hover {
   background-color: var(--colorContenedor);
   color: var(--colorTres);
-  transition: all 1.1s;
+  transition: all 0.9s;
 }
 
 .img {
@@ -370,7 +370,7 @@ body {
 }
 
 .btnColorUno:hover {
-  background-color: var(--colorDos);
+  background-color: var(--btnUnoHover);
   color: var(--colorContenedor); 
 }
 
