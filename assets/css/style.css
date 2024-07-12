@@ -99,7 +99,7 @@ body {
   font-family: var(--fuenteUno), sans-serif;
   font-style: italic;
   font-weight: bolder;
-  font-size: 3.5vh; 
+  font-size: 3vh; 
 }
 
 .logo:hover a {
@@ -179,7 +179,7 @@ body {
 .nombreIcono {
   text-align: center;
   color: var(--colorUno);
-  font-size: 1.1rem; 
+  font-size: 0.95rem; 
 }
 
 /* fin de animaciones, etiquetas, clases e id para el header*/
@@ -194,14 +194,14 @@ body {
 
 .tituloPrincipal {
   font-family: var(--fuenteUno), sans-serif;
-  font-size: 3.3rem;
+  font-size: 3rem;
   color: var(--colorUno);
   margin-top: 3rem; 
 }
 
 .presentacionInfoPrincipal {
-  font-size: 1.5rem;
-  max-width: 65vw; 
+  font-size: 1.4rem;
+  max-width: 50vw; 
 }
 
 .presentacion .foto .nombre {
@@ -459,7 +459,10 @@ body {
     min-height: 1.8rem; 
   }
   .iconoPresentacion {
-    height: 5vh; 
+    height: 6vh; 
+  }
+  .nombreIcono{
+    font-size: 0.8rem;
   } 
 }
 
@@ -531,6 +534,9 @@ body {
   .presentacionInfoPrincipal {
     font-size: 1.25rem; 
   }
+  .iconoPresentacion{
+    height: 6.5vh;
+  }
   .imgFotoPerfil {
     max-width: 20vw; 
   }
@@ -559,10 +565,10 @@ body {
     max-width: 40vw; 
   }
   .iconoPresentacion {
-    height: 4vh; 
+    height: 5.5vh; 
   }
   .nombreIcono {
-    font-size: 0.8rem; 
+    font-size: 0.7rem; 
   }
   .logo {
     padding-right: 3.5vw; 
