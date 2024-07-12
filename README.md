@@ -1,7 +1,7 @@
 <section align="center">
   <h1><b>Portfolio</b></h1>
   <h2>Data Engineer & Python Developer</h2>
-  <img src="./img/GitHub-Banner.png" alt="Logo" width="1150">
+  <img src="./img/LinkedIn-GitHub-Banner.png" alt="Logo" width="1150">
   <!-- <p align="center"><strong>{Open for hiring}</strong></p> -->
   <p>
   <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=21&pause=1000&color=C2D9F8&width=435&lines=Hello+World!+I+am+Nahuel;A+passionate+Data+Engineer;and+Full+Stack+Developer." alt="Typing SVG" /></a>
@@ -95,7 +95,7 @@ Este mi portfolio, que se encuentra constantemente en modificaciones y mejoras, 
 
 Si quieres saber más sobre mí, puedes ver mi Portfolio o bien ir a mi perfil de GitHub:
 
-[![GitHub Profile](https://img.shields.io/badge/GitHub-Nahuel_Dev1⚡-05122A?flat&logo=github&logoColor=white&labelColor=343941)](https://github.com/Nahuel-DevOne)
+[![GitHub Profile](https://img.shields.io/badge/GitHub-NaLo_Dev_ထ-05122A?flat&logo=github&logoColor=white&labelColor=343941)](https://github.com/Nahuel-DevOne)
   
 💬 Siéntete libre de ponerte en contacto conmigo:
 
@@ -105,7 +105,7 @@ Si quieres saber más sobre mí, puedes ver mi Portfolio o bien ir a mi perfil d
 [![Portfolio](https://img.shields.io/badge/-Portfolio-gray?style=flat&logo=stackoverflow&logoColor=white)](https://nahuel-lopez-dev.github.io/portfolio/)
 
 <div align="center">
-  <p>Desarrollado con 💙 por <i><b>NaLo Dev♾️</b></i></p>
+  <p>Desarrollado con 💙 por <i><b>NaLo Dev ထ</b></i></p>
 </div>
 
 ---

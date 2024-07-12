@@ -529,10 +529,10 @@ body {
 
 @media (max-width: 768px) {
   .tituloPrincipal {
-    font-size: 2rem; 
+    font-size: 1.7rem; 
   }
   .presentacionInfoPrincipal {
-    font-size: 1.25rem; 
+    font-size: 1.1rem; 
   }
   .iconoPresentacion{
     height: 6.5vh;
@@ -544,7 +544,7 @@ body {
     width: 75%; 
   }
   .imgFotoPerfil {
-    max-width: 40vw; 
+    max-width: 30vw; 
   }
   #footer {
     min-height: 70vh; 
@@ -553,7 +553,7 @@ body {
 
 @media (max-width: 575.98px) {
   .tituloPrincipal {
-    font-size: 1.5rem; 
+    font-size: 1.4rem;
   }
   .presentacion{
     margin: 0rem 1.5rem 0rem 1.5rem;
@@ -562,7 +562,7 @@ body {
     font-size: 1rem; 
   }
   .imgFotoPerfil {
-    max-width: 40vw; 
+    max-width: 25vw; 
   }
   .iconoPresentacion {
     height: 5.5vh; 
