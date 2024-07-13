@@ -529,16 +529,22 @@ body {
 
 @media (max-width: 768px) {
   .tituloPrincipal {
-    font-size: 1.7rem; 
+    font-size: 1.7rem;
+    margin-top: 0rem;
+    padding-top: 0rem;
   }
   .presentacionInfoPrincipal {
     font-size: 1.1rem; 
+    margin-bottom: 0rem;
+    padding-bottom: 0rem;
   }
   .iconoPresentacion{
     height: 6.5vh;
   }
   .imgFotoPerfil {
     max-width: 20vw; 
+    margin: 0rem;
+    padding: 0rem;
   }
   .proyecto {
     width: 75%; 
