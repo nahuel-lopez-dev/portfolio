@@ -75,7 +75,43 @@ body {
   margin: 0 1vw 0 0;
   height: 10vh; }
 
-/* animaciones */
+/*Transición para agrandar los items*/
+.trans {
+  transition: all 1s; 
+}
+
+.trans:hover {
+  transform: scale(1.1); 
+}
+
+.cajaIconosPresentacion {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  margin-top: 1.5rem; 
+}
+
+.iconoPresentacion {
+  height: 6.5vh;
+  width: auto;
+  background-color: var(--colorContenedor);
+  border-radius: 50%;
+  padding: 4px;
+  transition: all 300ms; 
+}
+
+.iconoPresentacion:hover {
+  border-radius: 10%;
+}
+
+.nombreIcono {
+  text-align: center;
+  color: var(--colorUno);
+  font-size: 0.95rem; 
+}
+
+/* animaciones con keyframes */
+
 /*animación para hacer caer un elemento y que genere el efecto de desaparecer*/
 .logo:hover .gear {
   animation: cae 500ms linear; 
@@ -147,39 +183,60 @@ body {
   } 
 }
 
-/*Transición para agrandar los items*/
-.trans {
-  transition: all 1s; 
+/*animación para efecto de visualización de imágenes con el scroll*/
+.img {
+  /*640 ancho x 426 alto*/
+  width: 100%;
+  height: auto;
+  padding: 5px;
+  border-radius: 10px;
+  /* Específico para el efecto de aparecer */
+  view-timeline-name: --reveal;
+  animation-name: show;
+  animation-fill-mode: both;
+  animation-timeline: --reveal;
+  animation-range: entry 25% cover 50%; 
 }
 
-.trans:hover {
-  transform: scale(1.1); 
+@keyframes show {
+  from {
+    opaticity: 0; scale: 10%;
+  }
+  to {
+    opacity: 1; scale: 100%;
+  }
 }
 
-.cajaIconosPresentacion {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
-  margin-top: 1.5rem; 
+/*Otra animación*/
+.stretchRight {
+  animation-name: stretchRight;
+  animation-duration: 2.5s;
+  animation-timing-function: ease-out;
+  transform-origin: 0% 0%; 
 }
 
-.iconoPresentacion {
-  height: 6.5vh;
-  width: auto;
-  background-color: var(--colorContenedor);
-  border-radius: 50%;
-  padding: 4px;
-  transition: all 300ms; 
-}
-
-.iconoPresentacion:hover {
-  border-radius: 10%;
-}
-
-.nombreIcono {
-  text-align: center;
-  color: var(--colorUno);
-  font-size: 0.95rem; 
+@keyframes stretchRight {
+  0% {
+    transform: scaleX(0.3); 
+  }
+  40% {
+    transform: scaleX(1.02); 
+  }
+  60% {
+    transform: scaleX(0.98); 
+  }
+  80% {
+    transform: scaleX(1.01); 
+  }
+  100% {
+    transform: scaleX(0.98); 
+  }
+  80% {
+    transform: scaleX(1.01); 
+  }
+  100% {
+    transform: scaleX(1); 
+  } 
 }
 
 /* fin de animaciones, etiquetas, clases e id para el header*/
@@ -224,37 +281,6 @@ body {
   font-size: 1rem; 
 }
 
-/* animaciones */
-.stretchRight {
-  animation-name: stretchRight;
-  animation-duration: 2.5s;
-  animation-timing-function: ease-out;
-  transform-origin: 0% 0%; 
-}
-
-@keyframes stretchRight {
-  0% {
-    transform: scaleX(0.3); 
-  }
-  40% {
-    transform: scaleX(1.02); 
-  }
-  60% {
-    transform: scaleX(0.98); 
-  }
-  80% {
-    transform: scaleX(1.01); 
-  }
-  100% {
-    transform: scaleX(0.98); 
-  }
-  80% {
-    transform: scaleX(1.01); 
-  }
-  100% {
-    transform: scaleX(1); 
-  } 
-}
 
 /* Sección sobre mí */
 .titulo {
@@ -337,14 +363,6 @@ body {
   background-color: var(--colorContenedor);
   color: var(--colorTres);
   transition: all 0.9s;
-}
-
-.img {
-  /*640 ancho x 426 alto*/
-  width: 100%;
-  height: auto;
-  padding: 5px;
-  border-radius: 10px; 
 }
 
 .info {
